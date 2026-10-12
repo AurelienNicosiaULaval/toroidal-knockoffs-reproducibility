@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+results/minimal_runs/
+results/*/checks_*
+results/**/rep_*.json
+results/v5/**/records/*.json
+results/v6/**/records/*.json
+results/statistical_papers/sp14_independent_*/

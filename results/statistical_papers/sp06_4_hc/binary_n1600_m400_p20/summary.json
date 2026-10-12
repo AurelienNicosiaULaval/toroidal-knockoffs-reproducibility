@@ -1,0 +1,3410 @@
+{
+  "config": {
+    "version": "sp06_4_hc",
+    "source_version": "sp06_4",
+    "protocol": "docs/statistical_papers/SP06_4_PROTOCOLE_FR_20261010.md",
+    "protocol_sha256": "830ee170539b9db6a210c5a4ca8edb9ffa5a580804e64fff43969efa1159e084",
+    "orders": [
+      1,
+      2
+    ],
+    "covariances": [
+      "hc0",
+      "hc3style"
+    ],
+    "repetitions": 1000,
+    "cases": [
+      "harmonic_n1600_m400_p20",
+      "harmonic_n1600_m1600_p20",
+      "binary_n1600_m400_p20"
+    ],
+    "replay_indices": [
+      0,
+      499,
+      999
+    ],
+    "scope": "Paired reanalysis of the same 3000 SP06.4 datasets; no independent datasets added; H2/HC3-style chosen before execution",
+    "id": "binary_n1600_m400_p20",
+    "source_config": {
+      "version": "sp06_4",
+      "seed": 10840100,
+      "p": 20,
+      "repetitions": 1000,
+      "field_phase": 0.7,
+      "root_field_norm": 3.0,
+      "leaf_field_norm": 0.2,
+      "singular_values": [
+        0.8,
+        0.5
+      ],
+      "left_rotation_step": 0.17,
+      "right_rotation_step": -0.11,
+      "active": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "continuous_scale": 3.0,
+      "binary_scale": 1.5,
+      "binary_intercept": -0.25,
+      "noise_sd": 1.0,
+      "ridge_penalty": 1.0,
+      "pilot_penalty_numerator": 1.0,
+      "pilot_optimizer_maxiter": 2000,
+      "pilot_gradient_tolerance": 3e-06,
+      "level": 0.1,
+      "marginal_level": 0.05,
+      "gate_mcse_multiplier": 3.0,
+      "method_order": [
+        "wald_pilot_by",
+        "wald_naive_by",
+        "wald_oracle_by",
+        "knockoff_plus_pilot",
+        "knockoff_plus_oracle"
+      ],
+      "cases": [
+        {
+          "id": "harmonic_n1600_m400_p20",
+          "n": 1600,
+          "m": 400,
+          "response": "harmonic",
+          "central": true
+        },
+        {
+          "id": "harmonic_n1600_m1600_p20",
+          "n": 1600,
+          "m": 1600,
+          "response": "harmonic",
+          "central": true
+        },
+        {
+          "id": "binary_n1600_m400_p20",
+          "n": 1600,
+          "m": 400,
+          "response": "binary",
+          "central": true
+        }
+      ],
+      "scope": "Prospective post-SP06.1 targeted star with p20 and ten signals; no automatic knockoff+ discovery floor handicap; no general robustness guarantee",
+      "followup_protocol": "docs/statistical_papers/SP06_4_PROTOCOLE_FR_20261010.md",
+      "followup_protocol_sha256": "830ee170539b9db6a210c5a4ca8edb9ffa5a580804e64fff43969efa1159e084",
+      "id": "binary_n1600_m400_p20",
+      "n": 1600,
+      "m": 400,
+      "response": "binary",
+      "central": true
+    }
+  },
+  "summary": [
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_hc0_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.0065,
+      "fdp_mcse": 0.0024927823739676843,
+      "fdp_failure_lower": 0.0065,
+      "fdp_failure_upper": 0.0065,
+      "power": 0.0022,
+      "power_mcse": 0.0004851756335548968,
+      "power_failure_lower": 0.0022,
+      "power_failure_upper": 0.0022,
+      "empty": 0.973,
+      "empty_mcse": 0.005128089049275304,
+      "empty_failure_lower": 0.973,
+      "empty_failure_upper": 0.973,
+      "marginal_null_rejection": 0.0261,
+      "marginal_null_rejection_mcse": 0.0016221656578233378,
+      "marginal_null_rejection_failure_lower": 0.0261,
+      "marginal_null_rejection_failure_upper": 0.0261
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_hc0_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.02408333333333333,
+      "fdp_mcse": 0.004567764073953685,
+      "fdp_failure_lower": 0.02408333333333333,
+      "fdp_failure_upper": 0.02408333333333333,
+      "power": 0.013300000000000001,
+      "power_mcse": 0.0012060533008804231,
+      "power_failure_lower": 0.013300000000000001,
+      "power_failure_upper": 0.013300000000000001,
+      "empty": 0.86,
+      "empty_mcse": 0.010978183844357888,
+      "empty_failure_lower": 0.86,
+      "empty_failure_upper": 0.86,
+      "marginal_null_rejection": 0.0565,
+      "marginal_null_rejection_mcse": 0.002285382456608297,
+      "marginal_null_rejection_failure_lower": 0.0565,
+      "marginal_null_rejection_failure_upper": 0.0565
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_hc0_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.0195,
+      "fdp_mcse": 0.004116096184901285,
+      "fdp_failure_lower": 0.0195,
+      "fdp_failure_upper": 0.0195,
+      "power": 0.014,
+      "power_mcse": 0.0012269904260040116,
+      "power_failure_lower": 0.014,
+      "power_failure_upper": 0.014,
+      "empty": 0.859,
+      "empty_mcse": 0.01101091459599248,
+      "empty_failure_lower": 0.859,
+      "empty_failure_upper": 0.859,
+      "marginal_null_rejection": 0.0612,
+      "marginal_null_rejection_mcse": 0.002340948534257009,
+      "marginal_null_rejection_failure_lower": 0.0612,
+      "marginal_null_rejection_failure_upper": 0.0612
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_hc3style_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.002,
+      "fdp_mcse": 0.0014135055705578234,
+      "fdp_failure_lower": 0.002,
+      "fdp_failure_upper": 0.002,
+      "power": 0.0013,
+      "power_mcse": 0.0003583830889403663,
+      "power_failure_lower": 0.0013,
+      "power_failure_upper": 0.0013,
+      "empty": 0.985,
+      "empty_mcse": 0.0038457495745029724,
+      "empty_failure_lower": 0.985,
+      "empty_failure_upper": 0.985,
+      "marginal_null_rejection": 0.018600000000000002,
+      "marginal_null_rejection_mcse": 0.0013623127012165363,
+      "marginal_null_rejection_failure_lower": 0.018600000000000002,
+      "marginal_null_rejection_failure_upper": 0.018600000000000002
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_hc3style_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.016,
+      "fdp_mcse": 0.0038417129979683236,
+      "fdp_failure_lower": 0.016,
+      "fdp_failure_upper": 0.016,
+      "power": 0.0070999999999999995,
+      "power_mcse": 0.0008487109698303132,
+      "power_failure_lower": 0.0070999999999999995,
+      "power_failure_upper": 0.0070999999999999995,
+      "empty": 0.918,
+      "empty_mcse": 0.008680515615523732,
+      "empty_failure_lower": 0.918,
+      "empty_failure_upper": 0.918,
+      "marginal_null_rejection": 0.0406,
+      "marginal_null_rejection_mcse": 0.0019430428238758446,
+      "marginal_null_rejection_failure_lower": 0.0406,
+      "marginal_null_rejection_failure_upper": 0.0406
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_hc3style_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.011666666666666665,
+      "fdp_mcse": 0.003289248012208741,
+      "fdp_failure_lower": 0.011666666666666665,
+      "fdp_failure_upper": 0.011666666666666665,
+      "power": 0.008100000000000001,
+      "power_mcse": 0.0008861011088894852,
+      "power_failure_lower": 0.008100000000000001,
+      "power_failure_upper": 0.008100000000000001,
+      "empty": 0.911,
+      "empty_mcse": 0.009008893392651516,
+      "empty_failure_lower": 0.911,
+      "empty_failure_upper": 0.911,
+      "marginal_null_rejection": 0.0439,
+      "marginal_null_rejection_mcse": 0.0019866395588371676,
+      "marginal_null_rejection_failure_lower": 0.0439,
+      "marginal_null_rejection_failure_upper": 0.0439
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_knockoff_plus_pilot",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.007375174825174826,
+      "fdp_mcse": 0.0017039470933608808,
+      "fdp_failure_lower": 0.007375174825174826,
+      "fdp_failure_upper": 0.007375174825174826,
+      "power": 0.012599999999999998,
+      "power_mcse": 0.002882628930256121,
+      "power_failure_lower": 0.012599999999999998,
+      "power_failure_upper": 0.012599999999999998,
+      "empty": 0.981,
+      "empty_mcse": 0.0043194510829106135,
+      "empty_failure_lower": 0.981,
+      "empty_failure_upper": 0.981
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h1_knockoff_plus_oracle",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.0062607323232323235,
+      "fdp_mcse": 0.0015598459174275495,
+      "fdp_failure_lower": 0.0062607323232323235,
+      "fdp_failure_upper": 0.0062607323232323235,
+      "power": 0.012199999999999999,
+      "power_mcse": 0.0029732137494637013,
+      "power_failure_lower": 0.012199999999999999,
+      "power_failure_upper": 0.012199999999999999,
+      "empty": 0.983,
+      "empty_mcse": 0.004089954489689063,
+      "empty_failure_lower": 0.983,
+      "empty_failure_upper": 0.983
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_hc0_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.007053354978354978,
+      "fdp_mcse": 0.0010815454508283939,
+      "fdp_failure_lower": 0.007053354978354978,
+      "fdp_failure_upper": 0.007053354978354978,
+      "power": 0.5859,
+      "power_mcse": 0.0056447367567543,
+      "power_failure_lower": 0.5859,
+      "power_failure_upper": 0.5859,
+      "empty": 0.002,
+      "empty_mcse": 0.0014135055705578234,
+      "empty_failure_lower": 0.002,
+      "empty_failure_upper": 0.002,
+      "marginal_null_rejection": 0.030900000000000004,
+      "marginal_null_rejection_mcse": 0.0017827979045220938,
+      "marginal_null_rejection_failure_lower": 0.030900000000000004,
+      "marginal_null_rejection_failure_upper": 0.030900000000000004
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_hc0_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.024489751914751914,
+      "fdp_mcse": 0.0016783340236573155,
+      "fdp_failure_lower": 0.024489751914751914,
+      "fdp_failure_upper": 0.024489751914751914,
+      "power": 0.7508,
+      "power_mcse": 0.004158924940012342,
+      "power_failure_lower": 0.7508,
+      "power_failure_upper": 0.7508,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.0755,
+      "marginal_null_rejection_mcse": 0.0027234476619107566,
+      "marginal_null_rejection_failure_lower": 0.0755,
+      "marginal_null_rejection_failure_upper": 0.0755
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_hc0_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.025893181818181815,
+      "fdp_mcse": 0.001767683901058028,
+      "fdp_failure_lower": 0.025893181818181815,
+      "fdp_failure_upper": 0.025893181818181815,
+      "power": 0.7512000000000001,
+      "power_mcse": 0.004314762702302084,
+      "power_failure_lower": 0.7512000000000001,
+      "power_failure_upper": 0.7512000000000001,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.0796,
+      "marginal_null_rejection_mcse": 0.002798512403344261,
+      "marginal_null_rejection_failure_lower": 0.0796,
+      "marginal_null_rejection_failure_upper": 0.0796
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_hc3style_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.0021888888888888887,
+      "fdp_mcse": 0.0006399033258155851,
+      "fdp_failure_lower": 0.0021888888888888887,
+      "fdp_failure_upper": 0.0021888888888888887,
+      "power": 0.42479999999999996,
+      "power_mcse": 0.006370678578106539,
+      "power_failure_lower": 0.42479999999999996,
+      "power_failure_upper": 0.42479999999999996,
+      "empty": 0.034,
+      "empty_mcse": 0.0057338361396953854,
+      "empty_failure_lower": 0.034,
+      "empty_failure_upper": 0.034,
+      "marginal_null_rejection": 0.012900000000000002,
+      "marginal_null_rejection_mcse": 0.0011683128668960876,
+      "marginal_null_rejection_failure_lower": 0.012900000000000002,
+      "marginal_null_rejection_failure_upper": 0.012900000000000002,
+      "fdr_diagnostic": true,
+      "marginal_diagnostic": true,
+      "calibration_diagnostic_complete": true
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_hc3style_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.007055375180375181,
+      "fdp_mcse": 0.0010725216845109593,
+      "fdp_failure_lower": 0.007055375180375181,
+      "fdp_failure_upper": 0.007055375180375181,
+      "power": 0.6066,
+      "power_mcse": 0.0054134781560236985,
+      "power_failure_lower": 0.6066,
+      "power_failure_upper": 0.6066,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.03289999999999999,
+      "marginal_null_rejection_mcse": 0.0018030088299397875,
+      "marginal_null_rejection_failure_lower": 0.03289999999999999,
+      "marginal_null_rejection_failure_upper": 0.03289999999999999
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_hc3style_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.0077634920634920635,
+      "fdp_mcse": 0.0010128259305637677,
+      "fdp_failure_lower": 0.0077634920634920635,
+      "fdp_failure_upper": 0.0077634920634920635,
+      "power": 0.6167,
+      "power_mcse": 0.005460854414002531,
+      "power_failure_lower": 0.6167,
+      "power_failure_upper": 0.6167,
+      "empty": 0.003,
+      "empty_mcse": 0.0017303161543469434,
+      "empty_failure_lower": 0.003,
+      "empty_failure_upper": 0.003,
+      "marginal_null_rejection": 0.033600000000000005,
+      "marginal_null_rejection_mcse": 0.0019064822775663756,
+      "marginal_null_rejection_failure_lower": 0.033600000000000005,
+      "marginal_null_rejection_failure_upper": 0.033600000000000005
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_knockoff_plus_pilot",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.06255722773958068,
+      "fdp_mcse": 0.0031098026289867456,
+      "fdp_failure_lower": 0.06255722773958068,
+      "fdp_failure_upper": 0.06255722773958068,
+      "power": 0.4738,
+      "power_mcse": 0.015365209066252557,
+      "power_failure_lower": 0.4738,
+      "power_failure_upper": 0.4738,
+      "empty": 0.511,
+      "empty_mcse": 0.01581547119529257,
+      "empty_failure_lower": 0.511,
+      "empty_failure_upper": 0.511
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "method": "h2_knockoff_plus_oracle",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.06309273259420319,
+      "fdp_mcse": 0.003047259608715664,
+      "fdp_failure_lower": 0.06309273259420319,
+      "fdp_failure_upper": 0.06309273259420319,
+      "power": 0.52,
+      "power_mcse": 0.015352384039480504,
+      "power_failure_lower": 0.52,
+      "power_failure_upper": 0.52,
+      "empty": 0.464,
+      "empty_mcse": 0.015778243024904673,
+      "empty_failure_lower": 0.464,
+      "empty_failure_upper": 0.464
+    }
+  ],
+  "paired": [
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.017583333333333333,
+      "mcse": 0.004108688211439124
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.011100000000000002,
+      "mcse": 0.0010990896223684393
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.113,
+      "mcse": 0.010016552866696775
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.013,
+      "mcse": 0.004554188129448244
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.011800000000000001,
+      "mcse": 0.0013124338011810282
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.114,
+      "mcse": 0.011880452228141198
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0045,
+      "mcse": 0.0020576646918251734
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0009000000000000001,
+      "mcse": 0.0002987963843142673
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.012,
+      "mcse": 0.0034449771940998205
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0095,
+      "mcse": 0.0032665609469930937
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.004900000000000001,
+      "mcse": 0.0007116856725384433
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.055,
+      "mcse": 0.0072129762946392005
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005166666666666666,
+      "mcse": 0.003896528317994486
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.005900000000000001,
+      "mcse": 0.0010179519763850486
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.062,
+      "mcse": 0.010210791363075648
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0008751748251748257,
+      "mcse": 0.003035353835537169
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.010399999999999998,
+      "mcse": 0.0029326507532334025
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.008,
+      "mcse": 0.00678100154711544
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.00023926767676767647,
+      "mcse": 0.0029544126728120726
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.01,
+      "mcse": 0.003021444874415075
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.01,
+      "mcse": 0.006629022849858337
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.000553354978354978,
+      "mcse": 0.0026515279731717076
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5837,
+      "mcse": 0.005637028125358794
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.971,
+      "mcse": 0.005309160685756948
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.017989751914751915,
+      "mcse": 0.0027740619192645147
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7485999999999999,
+      "mcse": 0.004177977440759523
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.973,
+      "mcse": 0.005128089049275304
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01939318181818182,
+      "mcse": 0.002924945541125281
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.749,
+      "mcse": 0.004333333333333334
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.973,
+      "mcse": 0.005128089049275304
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004311111111111111,
+      "mcse": 0.0025136143836347086
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.42260000000000003,
+      "mcse": 0.006358432957079101
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.939,
+      "mcse": 0.007572076091557476
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0005553751803751805,
+      "mcse": 0.0025975821957455944
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6043999999999998,
+      "mcse": 0.005413866451063413
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.973,
+      "mcse": 0.005128089049275304
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0012634920634920631,
+      "mcse": 0.002615397914722436
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6145,
+      "mcse": 0.00547994341027166
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.97,
+      "mcse": 0.0053971408290991564
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05605722773958068,
+      "mcse": 0.003933123416711218
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.4716,
+      "mcse": 0.015376927192709533
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.462,
+      "mcse": 0.01669834826666503
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.056592732594203186,
+      "mcse": 0.003992315274993752
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5177999999999999,
+      "mcse": 0.015365521769834542
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.509,
+      "mcse": 0.01655877994277336
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004583333333333333,
+      "mcse": 0.006006460740417915
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0006999999999999999,
+      "mcse": 0.0016829564291277247
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.001,
+      "mcse": 0.015007472279642041
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.022083333333333333,
+      "mcse": 0.004467201964697074
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.012000000000000002,
+      "mcse": 0.0011389895949029992
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.125,
+      "mcse": 0.010463483381956722
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008083333333333333,
+      "mcse": 0.0025228229166554947
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0062,
+      "mcse": 0.0008380108962670249
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.058,
+      "mcse": 0.0073953154557929906
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.012416666666666668,
+      "mcse": 0.0054994659804852835
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0052,
+      "mcse": 0.001481605600406247
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.051,
+      "mcse": 0.014021255136242104
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01670815850815851,
+      "mcse": 0.004870636212289699
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0007000000000000015,
+      "mcse": 0.0030982429067310255
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.121,
+      "mcse": 0.011768495974316237
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01782260101010101,
+      "mcse": 0.0048148068121545646
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0011000000000000005,
+      "mcse": 0.003075426514850948
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.123,
+      "mcse": 0.01148925598126367
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.017029978354978353,
+      "mcse": 0.004604744380832068
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5725999999999999,
+      "mcse": 0.0056728671253098665
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.858,
+      "mcse": 0.01113373072963236
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0004064185814185812,
+      "mcse": 0.00447691801960779
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7375,
+      "mcse": 0.004221560324284325
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.86,
+      "mcse": 0.010978183844357888
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.001809848484848485,
+      "mcse": 0.004868857857697585
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7379000000000001,
+      "mcse": 0.004491521319526799
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.86,
+      "mcse": 0.010978183844357888
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.021894444444444446,
+      "mcse": 0.004517639545259012
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.4115,
+      "mcse": 0.006368540516343467
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.826,
+      "mcse": 0.012160257886733814
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.017027958152958152,
+      "mcse": 0.004576332490709323
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5932999999999999,
+      "mcse": 0.005454802000518889
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.86,
+      "mcse": 0.010978183844357888
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01631984126984127,
+      "mcse": 0.004647926977674073
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6034,
+      "mcse": 0.0056285095824845244
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.857,
+      "mcse": 0.011075814808567074
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.03847389440624736,
+      "mcse": 0.005398194615577031
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.4605,
+      "mcse": 0.015467675940457216
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.349,
+      "mcse": 0.01937974650439408
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.039009399260869854,
+      "mcse": 0.005618190701515301
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5067,
+      "mcse": 0.015405922642037785
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.396,
+      "mcse": 0.019275776393067948
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0175,
+      "mcse": 0.004125084469127025
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.012700000000000001,
+      "mcse": 0.0012610710924845993
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.126,
+      "mcse": 0.011412898591254295
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0035,
+      "mcse": 0.005445759376255342
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.006900000000000001,
+      "mcse": 0.0014915142019486826
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.059,
+      "mcse": 0.01377347845348838
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.007833333333333335,
+      "mcse": 0.0027031568687475496
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.005900000000000001,
+      "mcse": 0.0008098430995235102
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.052,
+      "mcse": 0.007024624213817089
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.012124825174825176,
+      "mcse": 0.00443092572017983
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0014000000000000009,
+      "mcse": 0.0030442252392533812
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.122,
+      "mcse": 0.011629757144981628
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.013239267676767676,
+      "mcse": 0.004334237252645473
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0018000000000000008,
+      "mcse": 0.0031916996956084303
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.124,
+      "mcse": 0.011694475651381757
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.012446645021645022,
+      "mcse": 0.004192968238426053
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5719,
+      "mcse": 0.005796031744563171
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.857,
+      "mcse": 0.011165826242409279
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0049897519147519154,
+      "mcse": 0.004423246961785088
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7367999999999999,
+      "mcse": 0.0043891941202258335
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.859,
+      "mcse": 0.01101091459599248
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.006393181818181819,
+      "mcse": 0.004166728336083254
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7372000000000001,
+      "mcse": 0.004453762004866897
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.859,
+      "mcse": 0.01101091459599248
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.017311111111111114,
+      "mcse": 0.004151743728643907
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.4108,
+      "mcse": 0.00651658083858597
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.825,
+      "mcse": 0.012350203541947297
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01244462481962482,
+      "mcse": 0.004230282581231129
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5925999999999999,
+      "mcse": 0.005585377018289494
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.859,
+      "mcse": 0.01101091459599248
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.011736507936507937,
+      "mcse": 0.004064568336536317
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6027,
+      "mcse": 0.005500269353673778
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.856,
+      "mcse": 0.011107987548939158
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.043057227739580685,
+      "mcse": 0.005210480155938765
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.4598,
+      "mcse": 0.015432502134201121
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.348,
+      "mcse": 0.019628583272393384
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.04359273259420318,
+      "mcse": 0.0051187364794704655
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.506,
+      "mcse": 0.015456484170176052
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.019579539278500865
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.014,
+      "mcse": 0.003717232548256541
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0058,
+      "mcse": 0.000766124628860701
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.067,
+      "mcse": 0.007910345983177575
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.009666666666666665,
+      "mcse": 0.003295733888204851
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0068000000000000005,
+      "mcse": 0.0009563862580958986
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.074,
+      "mcse": 0.009727210217663573
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005375174825174826,
+      "mcse": 0.0022205773853890393
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.011300000000000001,
+      "mcse": 0.0029104605788054893
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.004,
+      "mcse": 0.005832496722503839
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.004260732323232323,
+      "mcse": 0.0021109678541852816
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0109,
+      "mcse": 0.0030000316981975694
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.002,
+      "mcse": 0.005659331058352039
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005053354978354978,
+      "mcse": 0.0017243942573818424
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5845999999999999,
+      "mcse": 0.005645769629972048
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.983,
+      "mcse": 0.004089954489689063
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.022489751914751912,
+      "mcse": 0.002112441645877356
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7495,
+      "mcse": 0.004173387972279497
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.985,
+      "mcse": 0.0038457495745029724
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.023893181818181817,
+      "mcse": 0.002159208237186392
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7499000000000001,
+      "mcse": 0.004326512303080706
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.985,
+      "mcse": 0.0038457495745029724
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.00018888888888888894,
+      "mcse": 0.0015544254836637478
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.4235,
+      "mcse": 0.0063638233985748105
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.951,
+      "mcse": 0.006829761756140959
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005055375180375181,
+      "mcse": 0.0017252102225572385
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6053,
+      "mcse": 0.0054195277729043225
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.985,
+      "mcse": 0.0038457495745029724
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0057634920634920634,
+      "mcse": 0.0016747086811375242
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6154,
+      "mcse": 0.005471085154955347
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.982,
+      "mcse": 0.00420638724961144
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06055722773958068,
+      "mcse": 0.0033352184811891133
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.4725,
+      "mcse": 0.015383445660852462
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.474,
+      "mcse": 0.016358227030812102
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.061092732594203183,
+      "mcse": 0.00339652950448523
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5187,
+      "mcse": 0.015356305744746232
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.521,
+      "mcse": 0.0161808782462764
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004333333333333334,
+      "mcse": 0.004893834517323775
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.001,
+      "mcse": 0.0012411851354816254
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.007,
+      "mcse": 0.012454160192727012
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008624825174825174,
+      "mcse": 0.004230654357421981
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.005499999999999999,
+      "mcse": 0.003034626658908631
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.063,
+      "mcse": 0.009855360375355544
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.009739267676767676,
+      "mcse": 0.004170422283557853
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0050999999999999995,
+      "mcse": 0.003045203320512977
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.065,
+      "mcse": 0.009426763170031582
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008946645021645022,
+      "mcse": 0.003912689979973841
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5788,
+      "mcse": 0.0056375830230997355
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.916,
+      "mcse": 0.008889489469200299
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.008489751914751913,
+      "mcse": 0.003877123839369267
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7437,
+      "mcse": 0.004199755700984041
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.918,
+      "mcse": 0.008680515615523732
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.00989318181818182,
+      "mcse": 0.004171748573913656
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7441000000000001,
+      "mcse": 0.004386847892785256
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.918,
+      "mcse": 0.008680515615523732
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.013811111111111114,
+      "mcse": 0.0037938186369373835
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.41770000000000007,
+      "mcse": 0.0063590209267738035
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.884,
+      "mcse": 0.010229792209456096
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008944624819624821,
+      "mcse": 0.003874905384579902
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5995,
+      "mcse": 0.0054165569404455716
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.918,
+      "mcse": 0.008680515615523732
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008236507936507936,
+      "mcse": 0.0039570039392782955
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6096,
+      "mcse": 0.0055333948402819105
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.915,
+      "mcse": 0.008823426366942317
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.04655722773958068,
+      "mcse": 0.004770656411700315
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.46670000000000006,
+      "mcse": 0.015397993642296656
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.407,
+      "mcse": 0.017935235506473638
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.047092732594203185,
+      "mcse": 0.004968132136921609
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5129,
+      "mcse": 0.015375304549503727
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.454,
+      "mcse": 0.018005782632482495
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004291491841491841,
+      "mcse": 0.0037275793559697445
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.0045,
+      "mcse": 0.003006457847499078
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.07,
+      "mcse": 0.00995987947714224
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.005405934343434343,
+      "mcse": 0.0035446204670307544
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0040999999999999995,
+      "mcse": 0.003114946691822011
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.072,
+      "mcse": 0.009844435632016337
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004613311688311688,
+      "mcse": 0.00343801818982204
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5778000000000001,
+      "mcse": 0.005734111966123442
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.909,
+      "mcse": 0.00920889807760971
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.012823085248085248,
+      "mcse": 0.0036839661356554343
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7427,
+      "mcse": 0.0043087440484757605
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.911,
+      "mcse": 0.009008893392651516
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.014226515151515153,
+      "mcse": 0.0033749709876620126
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7431,
+      "mcse": 0.004369379988222755
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.911,
+      "mcse": 0.009008893392651516
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.009477777777777778,
+      "mcse": 0.003358534494609569
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.4167,
+      "mcse": 0.006461645522841906
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.877,
+      "mcse": 0.01076972548336247
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004611291486291486,
+      "mcse": 0.0034834243871012744
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5985,
+      "mcse": 0.005502547412610638
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.911,
+      "mcse": 0.009008893392651516
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0039031746031746033,
+      "mcse": 0.003205599889679572
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6085999999999999,
+      "mcse": 0.005480517865683505
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.908,
+      "mcse": 0.009144376393151129
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.050890561072914016,
+      "mcse": 0.004514785312677785
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.4657,
+      "mcse": 0.015454201446284515
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.4,
+      "mcse": 0.018664092486599726
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05142606592753652,
+      "mcse": 0.004487589548821755
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5119,
+      "mcse": 0.015425509273159716
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.447,
+      "mcse": 0.01853468463542163
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.001114442501942502,
+      "mcse": 0.0021716724817953553
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0003999999999999995,
+      "mcse": 0.0039718529196856745
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.002,
+      "mcse": 0.005659331058352041
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0003218198468198472,
+      "mcse": 0.0019336762555152663
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5732999999999999,
+      "mcse": 0.006292591414251104
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.979,
+      "mcse": 0.004536472151306517
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01711457708957709,
+      "mcse": 0.0023207621315871874
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7382,
+      "mcse": 0.0050424385158558144
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.981,
+      "mcse": 0.0043194510829106135
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.018518006993006993,
+      "mcse": 0.0024701853972735567
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7386,
+      "mcse": 0.005295099439866837
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.981,
+      "mcse": 0.0043194510829106135
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0051862859362859365,
+      "mcse": 0.001828997309734317
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.4122,
+      "mcse": 0.007042780754841141
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.947,
+      "mcse": 0.007088105617246489
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.00031979964479964484,
+      "mcse": 0.0019355591572523803
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.594,
+      "mcse": 0.006087779649515993
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.981,
+      "mcse": 0.0043194510829106135
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.00038831723831723796,
+      "mcse": 0.002010940305899425
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6041,
+      "mcse": 0.006215450250932898
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.978,
+      "mcse": 0.00464085525927469
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05518205291440586,
+      "mcse": 0.003312985776991016
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.46120000000000005,
+      "mcse": 0.015354162637874797
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.47,
+      "mcse": 0.015979842156772242
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05571755776902836,
+      "mcse": 0.0035010727966620237
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5074000000000001,
+      "mcse": 0.015594499941595702
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.517,
+      "mcse": 0.016308800598970392
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0007926226551226554,
+      "mcse": 0.001877347354619899
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5737000000000001,
+      "mcse": 0.006283135187769541
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.981,
+      "mcse": 0.0043194510829106135
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.018229019591519593,
+      "mcse": 0.0023083569921843023
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7385999999999999,
+      "mcse": 0.005078960113629152
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.983,
+      "mcse": 0.004089954489689063
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.019632449494949494,
+      "mcse": 0.002366999618730943
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.739,
+      "mcse": 0.005160002483102661
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.983,
+      "mcse": 0.004089954489689063
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004071843434343435,
+      "mcse": 0.0016941166084047667
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.41259999999999997,
+      "mcse": 0.007029270989985423
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.949,
+      "mcse": 0.007102777586933822
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.000794642857142857,
+      "mcse": 0.0018795813885031656
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.5944,
+      "mcse": 0.006079934671162644
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.983,
+      "mcse": 0.004089954489689063
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0015027597402597404,
+      "mcse": 0.0018579484150908537
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.6045,
+      "mcse": 0.006091539777171028
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.98,
+      "mcse": 0.004429403980178328
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05629649541634836,
+      "mcse": 0.0033772651514108296
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.4616,
+      "mcse": 0.015546289818703596
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.472,
+      "mcse": 0.016170265225947205
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.056832000270970864,
+      "mcse": 0.003337109388678865
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.5077999999999999,
+      "mcse": 0.015641733402146446
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.519,
+      "mcse": 0.016306590842506137
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.017436396936396936,
+      "mcse": 0.0015025572351384762
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.16490000000000005,
+      "mcse": 0.004390588487579685
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.002,
+      "mcse": 0.0014135055705578234
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01883982683982684,
+      "mcse": 0.0019446339491904026
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.1653,
+      "mcse": 0.006299650434396785
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.002,
+      "mcse": 0.0014135055705578234
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0048644660894660895,
+      "mcse": 0.0009430672019196754
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.16110000000000002,
+      "mcse": 0.004734892734709965
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.032,
+      "mcse": 0.005568393575081328
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -2.0202020202020054e-06,
+      "mcse": 0.00042558427623550014
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.020700000000000003,
+      "mcse": 0.0021085435627361264
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.002,
+      "mcse": 0.0014135055705578234
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.000710137085137085,
+      "mcse": 0.0014499296480443482
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.030799999999999998,
+      "mcse": 0.00680423821288303
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.001,
+      "mcse": 0.00223696312084129
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05550387276122571,
+      "mcse": 0.003243649653475606
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.11209999999999999,
+      "mcse": 0.01613951901619358
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.509,
+      "mcse": 0.01587989833629835
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0560393776158482,
+      "mcse": 0.0032409019169955524
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.06589999999999999,
+      "mcse": 0.01625765977936251
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.462,
+      "mcse": 0.015836881220960358
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0014034299034299037,
+      "mcse": 0.002317509335077495
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0003999999999999979,
+      "mcse": 0.005290352334942148
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.022300863025863028,
+      "mcse": 0.0016442523462304871
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.326,
+      "mcse": 0.0058888605586037346
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.034,
+      "mcse": 0.0057338361396953854
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.017434376734376734,
+      "mcse": 0.0014917877920854108
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.14420000000000002,
+      "mcse": 0.004135633381171917
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.016726259851259855,
+      "mcse": 0.0019150684990523125
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.13410000000000002,
+      "mcse": 0.00611429264711582
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.038067475824828764,
+      "mcse": 0.0035089994630644883
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.277,
+      "mcse": 0.015863248174401188
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.511,
+      "mcse": 0.01581547119529257
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.03860298067945126,
+      "mcse": 0.0034661662259690413
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.2308,
+      "mcse": 0.015845581164553178
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.464,
+      "mcse": 0.015778243024904673
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.02370429292929293,
+      "mcse": 0.0018283629673766563
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.32639999999999997,
+      "mcse": 0.007005148971443228
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.034,
+      "mcse": 0.0057338361396953854
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.018837806637806636,
+      "mcse": 0.001949760672323567
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.1446,
+      "mcse": 0.00615863367710475
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.018129689754689753,
+      "mcse": 0.0015551551951239469
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.13450000000000004,
+      "mcse": 0.004117852195830577
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.036664045921398866,
+      "mcse": 0.0034574890929352773
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.2774,
+      "mcse": 0.01570209526769583
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.511,
+      "mcse": 0.01581547119529257
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.03719955077602137,
+      "mcse": 0.003587995616447854
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.2312,
+      "mcse": 0.01581507751092851
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.464,
+      "mcse": 0.015778243024904673
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.004866486291486291,
+      "mcse": 0.0009339281578358155
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.18180000000000002,
+      "mcse": 0.00490436670863964
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.034,
+      "mcse": 0.0057338361396953854
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005574603174603174,
+      "mcse": 0.0012121524227215058
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.19190000000000002,
+      "mcse": 0.007292295082315826
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.031,
+      "mcse": 0.006006252997924336
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.060368338850691795,
+      "mcse": 0.003123310853452752
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.04900000000000001,
+      "mcse": 0.016433778295604117
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.477,
+      "mcse": 0.01678549232976956
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0609038437053143,
+      "mcse": 0.0031194968672940008
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0952,
+      "mcse": 0.01643067031276956
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.43,
+      "mcse": 0.016654650322879112
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0007081168831168834,
+      "mcse": 0.0014432219458074996
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.010099999999999996,
+      "mcse": 0.006652235882937573
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.055501852559205506,
+      "mcse": 0.003244339026147096
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.1328,
+      "mcse": 0.016128368928204868
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.511,
+      "mcse": 0.01581547119529257
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.056037357413828,
+      "mcse": 0.003242387902135468
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0866,
+      "mcse": 0.01617164067007309
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.464,
+      "mcse": 0.015778243024904673
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05479373567608862,
+      "mcse": 0.0032389536711963066
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.14289999999999997,
+      "mcse": 0.01590227884526216
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.508,
+      "mcse": 0.015880434130973505
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.055329240530711116,
+      "mcse": 0.0031923678904327846
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0967,
+      "mcse": 0.01634399694800009
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.461,
+      "mcse": 0.0158344475662945
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0005355048546225017,
+      "mcse": 0.003989218842257187
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.046200000000000005,
+      "mcse": 0.020944790384347232
+    },
+    {
+      "configuration": "binary_n1600_m400_p20",
+      "left": "h2_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.047,
+      "mcse": 0.02161615734255879
+    }
+  ],
+  "timing": {
+    "h1_oracle_knockoff": {
+      "total_seconds": 1.0198625209741294
+    },
+    "h1_oracle_wald": {
+      "total_seconds": 6.7193560774903744
+    },
+    "h1_pilot_knockoff": {
+      "total_seconds": 1.038298735395074
+    },
+    "h1_pilot_wald": {
+      "total_seconds": 7.028126668883488
+    },
+    "h2_oracle_knockoff": {
+      "total_seconds": 0.4684106020722538
+    },
+    "h2_oracle_wald": {
+      "total_seconds": 14.088126258226112
+    },
+    "h2_pilot_knockoff": {
+      "total_seconds": 0.4665079868864268
+    },
+    "h2_pilot_wald": {
+      "total_seconds": 14.20491770398803
+    },
+    "reconstruct_original_response_witnesses": {
+      "total_seconds": 33.79396196547896
+    }
+  },
+  "failed_repetitions": [],
+  "independent_datasets_added": 0,
+  "reanalysed_datasets": 1000,
+  "max_rss_bytes_macos": 287817728,
+  "scope": "Paired reanalysis of the same 3000 SP06.4 datasets; no independent datasets added; H2/HC3-style chosen before execution"
+}

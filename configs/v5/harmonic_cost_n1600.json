@@ -1,0 +1,28 @@
+{
+  "id": "v5_0_harmonic_cost_n1600",
+  "version": "v5.0-main-harmonic-cost",
+  "seed": 932420,
+  "gamma": 1.0,
+  "kappa": 1.0,
+  "pairs": 10,
+  "noise_sd": 1.0,
+  "n": 1600,
+  "m": 1600,
+  "chunk": 8192,
+  "amplitude": 8.0,
+  "penalty": 5.0,
+  "q": 0.1,
+  "repetitions": 1000,
+  "responses": [
+    {
+      "name": "first_local",
+      "harmonic": 1,
+      "local": true
+    },
+    {
+      "name": "second_local",
+      "harmonic": 2,
+      "local": true
+    }
+  ]
+}

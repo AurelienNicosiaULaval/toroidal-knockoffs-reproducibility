@@ -1,0 +1,145 @@
+{
+  "config": {
+    "version": "sp06_3",
+    "source_version": "sp06_1",
+    "protocol": "docs/statistical_papers/SP06_3_PROTOCOLE_FR_20261010.md",
+    "orders": [
+      1,
+      2
+    ],
+    "covariances": [
+      "hc0",
+      "hc3style"
+    ],
+    "repetitions": 1000,
+    "cases": [
+      "harmonic_n400_m400",
+      "harmonic_n1600_m400",
+      "binary_n400_m400",
+      "null_n400_m400",
+      "harmonic_n1600_m40"
+    ],
+    "replay_indices": [
+      0,
+      499,
+      999
+    ],
+    "scope": "Paired reanalysis of the same 5000 SP06.1 datasets; no new independent selection datasets; harmonics and HC3-style choices fixed before this analysis",
+    "id": "harmonic_n1600_m400",
+    "source_config": {
+      "version": "sp06_1",
+      "seed": 10710100,
+      "p": 12,
+      "repetitions": 1000,
+      "field_phase": 0.7,
+      "root_field_norm": 3.0,
+      "leaf_field_norm": 0.2,
+      "singular_values": [
+        0.8,
+        0.5
+      ],
+      "left_rotation_step": 0.17,
+      "right_rotation_step": -0.11,
+      "active": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "continuous_scale": 3.0,
+      "binary_scale": 1.5,
+      "binary_intercept": -0.25,
+      "noise_sd": 1.0,
+      "ridge_penalty": 1.0,
+      "pilot_penalty_numerator": 1.0,
+      "pilot_optimizer_maxiter": 2000,
+      "pilot_gradient_tolerance": 3e-06,
+      "level": 0.1,
+      "marginal_level": 0.05,
+      "gate_mcse_multiplier": 3.0,
+      "method_order": [
+        "wald_pilot_by",
+        "wald_naive_by",
+        "wald_oracle_by",
+        "knockoff_plus_pilot",
+        "knockoff_plus_oracle"
+      ],
+      "cases": [
+        {
+          "id": "harmonic_n400_m400",
+          "n": 400,
+          "m": 400,
+          "response": "harmonic",
+          "central": true
+        },
+        {
+          "id": "harmonic_n1600_m400",
+          "n": 1600,
+          "m": 400,
+          "response": "harmonic",
+          "central": true
+        },
+        {
+          "id": "binary_n400_m400",
+          "n": 400,
+          "m": 400,
+          "response": "binary",
+          "central": true
+        },
+        {
+          "id": "null_n400_m400",
+          "n": 400,
+          "m": 400,
+          "response": "null",
+          "central": true
+        },
+        {
+          "id": "harmonic_n1600_m40",
+          "n": 1600,
+          "m": 40,
+          "response": "harmonic",
+          "central": false
+        }
+      ],
+      "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee",
+      "id": "harmonic_n1600_m400",
+      "n": 1600,
+      "m": 400,
+      "response": "harmonic",
+      "central": true
+    }
+  },
+  "code_sha256": {
+    "src/sp06/__init__.py": "113449847237714952c771f809f9fa4fdeddedb02c8fecda76986b6089297c56",
+    "src/sp06/wald.py": "dea51a6890e456ccddd37e8b7c6f150b83aacedbca837a460f8102a3bd07c44e",
+    "src/sp06/star.py": "617fad32e4117298e6e056ee282cb767d8446adebc7475cf888c420dddccfd00",
+    "src/fit_model.py": "3bd368feb72f3c0376ee6ece3abde8ad5ef558e8f844d09411cf7954fef39400",
+    "src/toroidal.py": "98180bdab88fd2eb422bb265f4dd93537cd5e5ec2709396e517d5b898bfbe342",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e",
+    "src/v3/fit_verified.py": "233e792b1fd5c587db4a9dd84e892dd60a114ee8c9d066d78e15f67b095a77f5",
+    "src/v3/population_pair.py": "74f65be6befe07a6a5c805a067c6a0987b484fa11173ece9b6ada51fb5014367",
+    "tests/test_sp06_star.py": "0611a34ebfeca1ca8dfd30b632b7237eb21d3c8e887932abcd62494a13b47fa4",
+    "tests/test_sp06_wald.py": "f455bbd883ca69608f121e7cde6451f77bd3e7929c78aa813f1fa60bef042837",
+    "scripts/statistical_papers/sp06_selection.py": "ba43ada945b96d3b4a8513f0e0c0c8480bfdaede2cf6d3f417767637b56ccfc3",
+    "configs/statistical_papers/sp06_1_selection.json": "1ae6eede6e147ca3cd2d317d24f56f3713645a844812c1a387a9fb5edd603d66",
+    "docs/statistical_papers/SP06_1_PROTOCOLE_FR_20261010.md": "e91e68afda7aac33917b99ba1c51e23fd54149cad84f146e909a73c2230909ad",
+    "src/sp06/harmonics_hc.py": "1a7c1b2e94900bcf8776065835082d5615129e5d08ca0bc865bfa8bd26241e94",
+    "tests/test_sp06_harmonics_hc.py": "c482a8120b2b9852d3c8d514df3e596478d6789842e88738fed04d6feca9e64e",
+    "scripts/statistical_papers/sp06_harmonics_hc.py": "aa068f7bf43fdc34b116f8fcc58e79b578c6b9724455e8576c90f006895bf3a1",
+    "configs/statistical_papers/sp06_3_harmonics_hc.json": "3d7075863cad8960979e81c54a2b60f492d37f6ae15a7f125e94f37453e296b9",
+    "docs/statistical_papers/SP06_3_PROTOCOLE_FR_20261010.md": "ab3a7f1e549c166334491c353f451e9acd4028f9952331ad75080c072a267ed1"
+  },
+  "source_manifest_sha256": "97fd131949908255ed81d72fc360109b747a022df05ca5132a31dd44da1922a0",
+  "source_summary_sha256": "84de2e973ea4e6b18e8f5d213c4bdc3c7fc85fb3bc9f3c4639256313154093f4",
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+    "blas_threads": 1
+  },
+  "signature": "a6c80a78a8923e4db2515aa2b5775269e4d2e3654652dc5a8b2b220f8bf7ac4c",
+  "created_utc": "2026-10-10T14:12:01.646376+00:00"
+}

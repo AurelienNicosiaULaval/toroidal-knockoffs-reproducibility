@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "id": "harmonic_n1600_m400_p20",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 105.50146991596557,
+      "summary_sha256": "8b48b4fd0a2dd8ea303d42c95f78fcd2b311c6c735d955eb95c65b190aefce05",
+      "failed_repetitions": []
+    },
+    {
+      "id": "harmonic_n1600_m1600_p20",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 226.43707970785908,
+      "summary_sha256": "3e9c5f1d03471024ee65e8bc01fedee64e65c2abb23b1253c9d7f5799db908de",
+      "failed_repetitions": []
+    },
+    {
+      "id": "binary_n1600_m400_p20",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 107.82480270788074,
+      "summary_sha256": "c25f944c77cd966da574d92fd3219e515964b396cd71553104606e3606b7488a",
+      "failed_repetitions": []
+    }
+  ],
+  "elapsed_seconds": 439.80503420811146,
+  "max_rss_bytes_macos": 134381568,
+  "scope": "Prospective post-SP06.1 targeted star with p20 and ten signals; no automatic knockoff+ discovery floor handicap; no general robustness guarantee"
+}

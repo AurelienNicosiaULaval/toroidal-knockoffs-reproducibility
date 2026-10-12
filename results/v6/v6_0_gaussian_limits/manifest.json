@@ -1,0 +1,26 @@
+{
+  "config": {
+    "id": "v6_0_gaussian_limits",
+    "seed": 106150,
+    "draws": 200000,
+    "pairs": 10,
+    "ratios": [
+      16000.0,
+      1.0
+    ]
+  },
+  "code": {
+    "src/v6/limits.py": "e3e1988b359db2ef17a12c3360c7efce6eb536c7912111c2e552e723638868a8",
+    "src/v6/tracking.py": "5fec795e76d960cb7fe07081ae0b6cf4af54005046b42b086339bcb7e2d2dc00",
+    "src/v5/normal_integral.py": "31275e0ae2a9acdd369da9a05c1a59b625ab7d856baced38c62611431075d908",
+    "src/v3/sign_limit.py": "0a6d0ccedafb8b6cf8e7c252bbe94e87b606187ab3cdadba1914361d0b46a936",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e",
+    "provenance/v6/influence_v5_input.json": "3d184d56048e3b17c480c4bb53f82f10dde4f2a38c69a60502075dc81dbcf3a2"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "368d5e249b7d6005cf3c70f0dc27187500663c61de8f046e44ad25ba6231ff75",
+  "created_utc": "2026-10-01T01:09:36.061640+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "reference": "/Users/aureliennicosia/Documents/edge_knockoffs_article_v1/results/statistical_papers/sp12_growing_20261010T180723_6739aaf9",
+  "new_datasets": 0,
+  "source_sha256": "40478e794124384e4e2a80286e1c0c60036dd2d9c1f02f9e30dea56de1d08b83",
+  "scope": "Saved-data check, not an FDR calibration",
+  "saved_datasets_checked": 9,
+  "saved_selection_subjects_checked": 126000,
+  "max_qr_coefficient_error": 8.326672684688674e-16,
+  "max_population_moment_error": 2.55351295663786e-15,
+  "negative_null_slope": -0.0009135784469194424,
+  "oracle_alpha": 2.222205160151821,
+  "one_increment_information": 0.4925825383152684,
+  "asymptotic_pilot_variance_to_oracle_ratio": "n/(K^2 m)/scale_constant",
+  "scale_constant": 1311509.599528031,
+  "scope_of_scale": "Leading K-growing Gaussian variance ratio at g=.2, not an FDR crossing or a sufficient finite-sample requirement",
+  "all_nine_selections_empty": true,
+  "elapsed_seconds": 24.023549666861072
+}

@@ -1,0 +1,18 @@
+{
+  "response_covariance_linear_field": [
+    "g*k/8",
+    "g**2*k/32",
+    "g*k*t/16",
+    "k*(g*t/16 - t**2/32)"
+  ],
+  "coefficient_linear_field": [
+    "g*k/4",
+    "-g**2*k/16",
+    "0",
+    "-k*t**2/16"
+  ],
+  "null_score_derivative": "-g*k/8",
+  "witness_cross_covariance_first_order": "t/4",
+  "scope": "exact finite Taylor coefficients; remainders require the analytic proof",
+  "sympy_version": "1.14.0"
+}

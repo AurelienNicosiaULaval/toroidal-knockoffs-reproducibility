@@ -1,0 +1,43 @@
+{
+  "config": {
+    "id": "v5_0_harmonic_variance",
+    "seed": 930830,
+    "batches": 20,
+    "rows": 50000,
+    "gamma": 1.0,
+    "kappa": 1.0
+  },
+  "variance_ratios": [
+    1.0392613053599573,
+    1.0387153597971803,
+    1.1972396544495514,
+    1.2029985692521925,
+    1.0392585375033299,
+    1.03881003654032,
+    1.1985101073373563,
+    1.200529065294931
+  ],
+  "mcse": [
+    0.00041125668638978435,
+    0.00031449906120325805,
+    0.001401160171191618,
+    0.0013833511613284483,
+    0.00042792884287933377,
+    0.0003935089458621994,
+    0.0013609335352434062,
+    0.0011783487460362266
+  ],
+  "order": [
+    "original1_cos",
+    "original1_sin",
+    "original2_cos",
+    "original2_sin",
+    "witness1_cos",
+    "witness1_sin",
+    "witness2_cos",
+    "witness2_sin"
+  ],
+  "minimum_variance_difference_eigenvalue": 0.09465078485271215,
+  "seconds": 5.00276895891875,
+  "scope": "Asymptotic coefficient variances under a correctly specified first-harmonic mean, not power ratios."
+}

@@ -1,0 +1,52 @@
+{
+  "command": "rebuild",
+  "started_utc": "2026-10-09T18:09:45.794438+00:00",
+  "python": "3.13.13 (main, Apr  7 2026, 18:19:01) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "executable": "/Users/aureliennicosia/.cache/edge_knockoffs_ejs_clean_20261002/bin/python",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "runner_sha256": "ad9a9084a62d7b65b572f86623d8f3e426c0347d982c4dd43b455ea04ef392c1",
+  "retained_data_root": "/Users/aureliennicosia/.cache/edge_knockoffs_sp03_20261008/learned_toroidal_knockoffs_statistical_papers",
+  "retained_data_sets_reaggregated": 7000,
+  "new_simulations": 0,
+  "manuscript_validation": {
+    "status": "passed",
+    "scientific_body_preserved": true,
+    "preserved_formal_results": 11,
+    "preserved_tables": 4,
+    "abstract_words": 38,
+    "cross_references": [
+      {
+        "document": "main",
+        "labels": 8,
+        "calls": 6,
+        "references": 8
+      },
+      {
+        "document": "supplement",
+        "labels": 35,
+        "calls": 51,
+        "references": 13
+      }
+    ],
+    "ai_declaration": "OpenAI Codex and Anthropic Claude assisted with mathematical arguments, code and manuscript preparation. The author reviewed and edited the material and takes full responsibility for its content.",
+    "ai_declaration_sha256": "ccabcb151b1f5c50240b73a9f594a3f11820095ba9080833d60efc1691aac3a1",
+    "fair_sign_fdr_exact": "467686735/5959489536",
+    "rho6_bound_exact": "591842767/5959489536",
+    "gaussian_records_checked": 250000,
+    "new_toroidal_simulations": 0,
+    "main_sha256": "94f5a68aeb5d5bb11f03c57b1c344865a68c7802c0841beeb6a19bc9ddd03921",
+    "supplement_sha256": "6d84262b75f2bcfe89cbebe20a61abc887cd3a2adbf147087bbd4809aad213ea",
+    "seconds": 0.014174666022881866,
+    "scope": "Preservation and saved-output checks, not a novelty certificate or an external review"
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "pytest": "9.0.2",
+    "sympy": "1.14.0"
+  },
+  "status": "ok",
+  "seconds": 89.12962433299981,
+  "finished_utc": "2026-10-09T18:11:14.923997+00:00"
+}

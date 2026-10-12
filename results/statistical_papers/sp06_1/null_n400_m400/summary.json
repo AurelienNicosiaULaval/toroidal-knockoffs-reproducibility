@@ -1,0 +1,501 @@
+{
+  "config": {
+    "version": "sp06_1",
+    "seed": 10910100,
+    "p": 12,
+    "repetitions": 1000,
+    "field_phase": 0.7,
+    "root_field_norm": 3.0,
+    "leaf_field_norm": 0.2,
+    "singular_values": [
+      0.8,
+      0.5
+    ],
+    "left_rotation_step": 0.17,
+    "right_rotation_step": -0.11,
+    "active": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "continuous_scale": 3.0,
+    "binary_scale": 1.5,
+    "binary_intercept": -0.25,
+    "noise_sd": 1.0,
+    "ridge_penalty": 1.0,
+    "pilot_penalty_numerator": 1.0,
+    "pilot_optimizer_maxiter": 2000,
+    "pilot_gradient_tolerance": 3e-06,
+    "level": 0.1,
+    "marginal_level": 0.05,
+    "gate_mcse_multiplier": 3.0,
+    "method_order": [
+      "wald_pilot_by",
+      "wald_naive_by",
+      "wald_oracle_by",
+      "knockoff_plus_pilot",
+      "knockoff_plus_oracle"
+    ],
+    "cases": [
+      {
+        "id": "harmonic_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "harmonic",
+        "central": true
+      },
+      {
+        "id": "harmonic_n1600_m400",
+        "n": 1600,
+        "m": 400,
+        "response": "harmonic",
+        "central": true
+      },
+      {
+        "id": "binary_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "binary",
+        "central": true
+      },
+      {
+        "id": "null_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "null",
+        "central": true
+      },
+      {
+        "id": "harmonic_n1600_m40",
+        "n": 1600,
+        "m": 40,
+        "response": "harmonic",
+        "central": false
+      }
+    ],
+    "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee",
+    "id": "null_n400_m400",
+    "n": 400,
+    "m": 400,
+    "response": "null",
+    "central": true
+  },
+  "summary": [
+    {
+      "configuration": "null_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_pilot_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.037,
+      "fdp_mcse": 0.005972157622389639,
+      "fdp_failure_lower": 0.037,
+      "fdp_failure_upper": 0.037,
+      "power": 0.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 0.0,
+      "power_failure_upper": 0.0,
+      "empty": 0.963,
+      "empty_mcse": 0.005972157622389639,
+      "empty_failure_lower": 0.963,
+      "empty_failure_upper": 0.963,
+      "marginal_null_rejection": 0.047,
+      "marginal_null_rejection_mcse": 0.001990383956668067,
+      "marginal_null_rejection_failure_lower": 0.047,
+      "marginal_null_rejection_failure_upper": 0.047,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdr_diagnostic": true,
+      "marginal_diagnostic": true,
+      "calibration_diagnostic_complete": true
+    },
+    {
+      "configuration": "null_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_naive_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.073,
+      "fdp_mcse": 0.008230354715243976,
+      "fdp_failure_lower": 0.073,
+      "fdp_failure_upper": 0.073,
+      "power": 0.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 0.0,
+      "power_failure_upper": 0.0,
+      "empty": 0.927,
+      "empty_mcse": 0.008230354715243976,
+      "empty_failure_lower": 0.927,
+      "empty_failure_upper": 0.927,
+      "marginal_null_rejection": 0.07158333333333333,
+      "marginal_null_rejection_mcse": 0.002415170454875573,
+      "marginal_null_rejection_failure_lower": 0.07158333333333333,
+      "marginal_null_rejection_failure_upper": 0.07158333333333333,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_oracle_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.076,
+      "fdp_mcse": 0.008384169266796462,
+      "fdp_failure_lower": 0.076,
+      "fdp_failure_upper": 0.076,
+      "power": 0.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 0.0,
+      "power_failure_upper": 0.0,
+      "empty": 0.924,
+      "empty_mcse": 0.008384169266796462,
+      "empty_failure_lower": 0.924,
+      "empty_failure_upper": 0.924,
+      "marginal_null_rejection": 0.07366666666666666,
+      "marginal_null_rejection_mcse": 0.0023941035340460386,
+      "marginal_null_rejection_failure_lower": 0.07366666666666666,
+      "marginal_null_rejection_failure_upper": 0.07366666666666666,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "knockoff_plus_pilot",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.0,
+      "fdp_mcse": 0.0,
+      "fdp_failure_lower": 0.0,
+      "fdp_failure_upper": 0.0,
+      "power": 0.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 0.0,
+      "power_failure_upper": 0.0,
+      "empty": 1.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 1.0,
+      "empty_failure_upper": 1.0,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "knockoff_plus_oracle",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.001,
+      "fdp_mcse": 0.001,
+      "fdp_failure_lower": 0.001,
+      "fdp_failure_upper": 0.001,
+      "power": 0.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 0.0,
+      "power_failure_upper": 0.0,
+      "empty": 0.999,
+      "empty_mcse": 0.001,
+      "empty_failure_lower": 0.999,
+      "empty_failure_upper": 0.999,
+      "failures": 0,
+      "failure_rate": 0.0
+    }
+  ],
+  "paired": [
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.036,
+      "mcse": 0.005893957816165529
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.036,
+      "mcse": 0.005893957816165529
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.039,
+      "mcse": 0.009978906682526826
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.039,
+      "mcse": 0.009978906682526826
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.037,
+      "mcse": 0.005972157622389639
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.037,
+      "mcse": 0.005972157622389639
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.036,
+      "mcse": 0.006061414087549268
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.036,
+      "mcse": 0.006061414087549268
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.011537942802949064
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.003,
+      "mcse": 0.011537942802949064
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.073,
+      "mcse": 0.008230354715243976
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.073,
+      "mcse": 0.008230354715243976
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.072,
+      "mcse": 0.008299691854815145
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.072,
+      "mcse": 0.008299691854815145
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.076,
+      "mcse": 0.008384169266796462
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.076,
+      "mcse": 0.008384169266796462
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.075,
+      "mcse": 0.008452599981452244
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.075,
+      "mcse": 0.008452599981452244
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.001,
+      "mcse": 0.001
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "null_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.001,
+      "mcse": 0.001
+    }
+  ],
+  "timing": {
+    "estimated_statistics": {
+      "total_seconds": 1.742965773679316,
+      "mean_seconds_per_attempt": 0.001742965773679316,
+      "median_seconds_per_attempt": 0.001719854073598981
+    },
+    "estimated_witness": {
+      "total_seconds": 0.9180770362727344,
+      "mean_seconds_per_attempt": 0.0009180770362727344,
+      "median_seconds_per_attempt": 0.0009094795677810907
+    },
+    "oracle_statistics": {
+      "total_seconds": 1.695504098199308,
+      "mean_seconds_per_attempt": 0.0016955040981993079,
+      "median_seconds_per_attempt": 0.001672645565122366
+    },
+    "oracle_witness": {
+      "total_seconds": 0.9022973286919296,
+      "mean_seconds_per_attempt": 0.0009022973286919296,
+      "median_seconds_per_attempt": 0.000896165962330997
+    },
+    "original_sampling": {
+      "total_seconds": 1.6524399758782238,
+      "mean_seconds_per_attempt": 0.0016524399758782238,
+      "median_seconds_per_attempt": 0.0016377083957195282
+    },
+    "pilot_estimation": {
+      "total_seconds": 25.136013665236533,
+      "mean_seconds_per_attempt": 0.02513601366523653,
+      "median_seconds_per_attempt": 0.024981520953588188
+    },
+    "pilot_sampling": {
+      "total_seconds": 1.641099788947031,
+      "mean_seconds_per_attempt": 0.001641099788947031,
+      "median_seconds_per_attempt": 0.0016255006194114685
+    },
+    "pilot_sandwich": {
+      "total_seconds": 2.331580250291154,
+      "mean_seconds_per_attempt": 0.002331580250291154,
+      "median_seconds_per_attempt": 0.0023070420138537884
+    }
+  },
+  "failed_repetitions": [],
+  "max_rss_bytes_macos": 110444544,
+  "individual_recomputed_selections": 5000,
+  "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee"
+}

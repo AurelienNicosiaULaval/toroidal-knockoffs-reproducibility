@@ -1,0 +1,33 @@
+{
+  "config": {
+    "version": "v6.0-pilot-sharing",
+    "gamma": 1.0,
+    "kappa": 1.0,
+    "pairs": 10,
+    "noise_sd": 0.5,
+    "chunk": 8192,
+    "amplitude": 1.0,
+    "penalty": 5.0,
+    "q": 0.1,
+    "repetitions": 1000,
+    "id": "v6_0_comparable",
+    "n": 80000,
+    "m": 80000,
+    "seed": 106130
+  },
+  "code": {
+    "src/v6/run_experiment.py": "bae82dd44300183ad24143741b2cd65fae0912b7130e5bcaeeec852d47bb32ab",
+    "src/v6/core.py": "deef3be262a2313f1de0de55f8e38b0d7ad6dc583ad3b15028de646eff48bc55",
+    "src/v6/tracking.py": "5fec795e76d960cb7fe07081ae0b6cf4af54005046b42b086339bcb7e2d2dc00",
+    "src/v4/core.py": "152442f8975bdf615a00653998aa4c05b5e739e8a535d6be18aaa9bf7de35089",
+    "src/v5/harmonic_score.py": "b401e415cb44a547b8ef008283c0e15d9f7a47a4decb9bdf24e10531b065c825",
+    "src/toroidal.py": "98180bdab88fd2eb422bb265f4dd93537cd5e5ec2709396e517d5b898bfbe342",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "01b5bdca256030c54577a8f4137a3d388677d5e600e0dbe2d8cf96dba01b73f9",
+  "created_utc": "2026-10-01T01:05:31.361133+00:00"
+}

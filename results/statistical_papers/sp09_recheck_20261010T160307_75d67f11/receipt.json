@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "source_sha256": "1ad4ab59defbf7bd2ff56cbfa92b131b317a9b72d3d52e4a455c8f5eb4c64051",
+  "new_selection_datasets": 0,
+  "new_covariate_samples": 0,
+  "generator_imported": false,
+  "data_receipt_sha256": "5638ca90870634a10ec3783212b7efcb1a6bd79bd9b82e2b2f6dfa71f2628cf3",
+  "raw_univariate_pairs_rechecked": 500000,
+  "retained_star_subjects_rechecked": 100000,
+  "independent_quadrature_rows": 15,
+  "quadrature_max_abs_difference": 8.615330671091215e-14,
+  "star_max_abs_difference": 2.0261570199409107e-15,
+  "bridge_min_eigenvalue": 5.551115122517995e-17,
+  "elapsed_seconds": 0.895759167149663
+}

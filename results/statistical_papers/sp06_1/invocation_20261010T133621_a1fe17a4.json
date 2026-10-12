@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "id": "harmonic_n400_m400",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 38.55312287504785,
+      "summary_sha256": "1a5b232a475e08bbb00e4ce77e706ef5b1b315f61b1bae45b6304a83ca868b21",
+      "failed_repetitions": []
+    },
+    {
+      "id": "harmonic_n1600_m400",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 51.387843291973695,
+      "summary_sha256": "84de2e973ea4e6b18e8f5d213c4bdc3c7fc85fb3bc9f3c4639256313154093f4",
+      "failed_repetitions": []
+    },
+    {
+      "id": "binary_n400_m400",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 38.77666479209438,
+      "summary_sha256": "6f427cc61d4a1eaf1047a8792fd020ae624ccdb92b8dbe1219b2b259dfb802b4",
+      "failed_repetitions": []
+    },
+    {
+      "id": "null_n400_m400",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 39.12104241689667,
+      "summary_sha256": "36dc6542b4710fcaa0746415bfa17fa1f4944520b9a23c5becb5de4b9b22c969",
+      "failed_repetitions": []
+    },
+    {
+      "id": "harmonic_n1600_m40",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 30.262484040809795,
+      "summary_sha256": "5064691bb76e62b4aeac3b226d87abbf9f445ee784902e21e8d5e9488cd41cfa",
+      "failed_repetitions": []
+    }
+  ],
+  "elapsed_seconds": 198.14913454209454,
+  "max_rss_bytes_macos": 110903296,
+  "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee"
+}

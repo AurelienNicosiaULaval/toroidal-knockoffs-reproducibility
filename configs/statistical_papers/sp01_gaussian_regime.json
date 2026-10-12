@@ -1,0 +1,22 @@
+{
+  "id": "sp01_gaussian_regime_20261007",
+  "question": "Quantify the already proved common-Gaussian score limit, not finite-sample toroidal FDR.",
+  "nulls": 10,
+  "strong_signals": 10,
+  "q": 0.1,
+  "variances": [0.0, 0.00002698603357553489, 0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.431776537, 1.0],
+  "quadrature_nodes": [256, 512],
+  "draws": 250000,
+  "chunk": 10000,
+  "seed": 2026100701,
+  "crossing_bracket": [0.0, 0.2],
+  "checks": {
+    "zero_variance_absolute_tolerance": 1e-9,
+    "quadrature_difference_tolerance": 1e-7,
+    "monte_carlo_standard_errors": 4.0,
+    "threshold_checks_per_variance": 200
+  },
+  "retained_calibration": "provenance/v6/influence_v5_input.json",
+  "retained_calibration_scope": "Known numerical parameters g=kappa=1; not analytically certified by the small-interaction counterexample theorem.",
+  "scope": "Gaussian limit calculation and independent Gaussian Monte Carlo; no new toroidal data sets, no practical finite-sample certificate. Quadrature convergence is not interval certification."
+}

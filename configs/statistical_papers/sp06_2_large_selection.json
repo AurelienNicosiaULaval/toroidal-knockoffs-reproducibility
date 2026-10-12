@@ -1,0 +1,53 @@
+{
+  "version": "sp06_2_large",
+  "seed": 10620100,
+  "p": 12,
+  "repetitions": 1000,
+  "field_phase": 0.7,
+  "root_field_norm": 3.0,
+  "leaf_field_norm": 0.2,
+  "singular_values": [
+    0.8,
+    0.5
+  ],
+  "left_rotation_step": 0.17,
+  "right_rotation_step": -0.11,
+  "active": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "continuous_scale": 3.0,
+  "binary_scale": 1.5,
+  "binary_intercept": -0.25,
+  "noise_sd": 1.0,
+  "ridge_penalty": 1.0,
+  "pilot_penalty_numerator": 1.0,
+  "pilot_optimizer_maxiter": 2000,
+  "pilot_gradient_tolerance": 3e-06,
+  "level": 0.1,
+  "marginal_level": 0.05,
+  "gate_mcse_multiplier": 3.0,
+  "method_order": [
+    "wald_pilot_by",
+    "wald_naive_by",
+    "wald_oracle_by",
+    "knockoff_plus_pilot",
+    "knockoff_plus_oracle"
+  ],
+  "cases": [
+    {
+      "id": "harmonic_n32000_m400",
+      "n": 32000,
+      "m": 400,
+      "response": "harmonic",
+      "central": true
+    }
+  ],
+  "scope": "Targeted post-sp06_1 independent study at n/m=80 with identical connected star and response; no finite-sample or misspecification guarantee",
+  "followup_protocol": "docs/statistical_papers/SP06_2_PROTOCOLE_FR_20261010.md",
+  "followup_protocol_sha256": "98df342cd1f15d981aed8a15909cf57e7a2dbf29b59010e7f432541527cbd455"
+}

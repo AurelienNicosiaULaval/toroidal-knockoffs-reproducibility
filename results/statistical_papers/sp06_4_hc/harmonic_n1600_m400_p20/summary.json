@@ -1,0 +1,3410 @@
+{
+  "config": {
+    "version": "sp06_4_hc",
+    "source_version": "sp06_4",
+    "protocol": "docs/statistical_papers/SP06_4_PROTOCOLE_FR_20261010.md",
+    "protocol_sha256": "830ee170539b9db6a210c5a4ca8edb9ffa5a580804e64fff43969efa1159e084",
+    "orders": [
+      1,
+      2
+    ],
+    "covariances": [
+      "hc0",
+      "hc3style"
+    ],
+    "repetitions": 1000,
+    "cases": [
+      "harmonic_n1600_m400_p20",
+      "harmonic_n1600_m1600_p20",
+      "binary_n1600_m400_p20"
+    ],
+    "replay_indices": [
+      0,
+      499,
+      999
+    ],
+    "scope": "Paired reanalysis of the same 3000 SP06.4 datasets; no independent datasets added; H2/HC3-style chosen before execution",
+    "id": "harmonic_n1600_m400_p20",
+    "source_config": {
+      "version": "sp06_4",
+      "seed": 10640100,
+      "p": 20,
+      "repetitions": 1000,
+      "field_phase": 0.7,
+      "root_field_norm": 3.0,
+      "leaf_field_norm": 0.2,
+      "singular_values": [
+        0.8,
+        0.5
+      ],
+      "left_rotation_step": 0.17,
+      "right_rotation_step": -0.11,
+      "active": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "continuous_scale": 3.0,
+      "binary_scale": 1.5,
+      "binary_intercept": -0.25,
+      "noise_sd": 1.0,
+      "ridge_penalty": 1.0,
+      "pilot_penalty_numerator": 1.0,
+      "pilot_optimizer_maxiter": 2000,
+      "pilot_gradient_tolerance": 3e-06,
+      "level": 0.1,
+      "marginal_level": 0.05,
+      "gate_mcse_multiplier": 3.0,
+      "method_order": [
+        "wald_pilot_by",
+        "wald_naive_by",
+        "wald_oracle_by",
+        "knockoff_plus_pilot",
+        "knockoff_plus_oracle"
+      ],
+      "cases": [
+        {
+          "id": "harmonic_n1600_m400_p20",
+          "n": 1600,
+          "m": 400,
+          "response": "harmonic",
+          "central": true
+        },
+        {
+          "id": "harmonic_n1600_m1600_p20",
+          "n": 1600,
+          "m": 1600,
+          "response": "harmonic",
+          "central": true
+        },
+        {
+          "id": "binary_n1600_m400_p20",
+          "n": 1600,
+          "m": 400,
+          "response": "binary",
+          "central": true
+        }
+      ],
+      "scope": "Prospective post-SP06.1 targeted star with p20 and ten signals; no automatic knockoff+ discovery floor handicap; no general robustness guarantee",
+      "followup_protocol": "docs/statistical_papers/SP06_4_PROTOCOLE_FR_20261010.md",
+      "followup_protocol_sha256": "830ee170539b9db6a210c5a4ca8edb9ffa5a580804e64fff43969efa1159e084",
+      "id": "harmonic_n1600_m400_p20",
+      "n": 1600,
+      "m": 400,
+      "response": "harmonic",
+      "central": true
+    }
+  },
+  "summary": [
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_hc0_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.004833333333333333,
+      "fdp_mcse": 0.0019278139086712875,
+      "fdp_failure_lower": 0.004833333333333333,
+      "fdp_failure_upper": 0.004833333333333333,
+      "power": 0.0534,
+      "power_mcse": 0.002848957099809781,
+      "power_failure_lower": 0.0534,
+      "power_failure_upper": 0.0534,
+      "empty": 0.665,
+      "empty_mcse": 0.014933117490932629,
+      "empty_failure_lower": 0.665,
+      "empty_failure_upper": 0.665,
+      "marginal_null_rejection": 0.027200000000000002,
+      "marginal_null_rejection_mcse": 0.0016133080185639576,
+      "marginal_null_rejection_failure_lower": 0.027200000000000002,
+      "marginal_null_rejection_failure_upper": 0.027200000000000002
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_hc0_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.01804285714285714,
+      "fdp_mcse": 0.002712214679324516,
+      "fdp_failure_lower": 0.01804285714285714,
+      "fdp_failure_upper": 0.01804285714285714,
+      "power": 0.1744,
+      "power_mcse": 0.004809133785596713,
+      "power_failure_lower": 0.1744,
+      "power_failure_upper": 0.1744,
+      "empty": 0.257,
+      "empty_mcse": 0.013825416526895028,
+      "empty_failure_lower": 0.257,
+      "empty_failure_upper": 0.257,
+      "marginal_null_rejection": 0.061,
+      "marginal_null_rejection_mcse": 0.002421748307497058,
+      "marginal_null_rejection_failure_lower": 0.061,
+      "marginal_null_rejection_failure_upper": 0.061
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_hc0_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.019225396825396826,
+      "fdp_mcse": 0.002644930085331194,
+      "fdp_failure_lower": 0.019225396825396826,
+      "fdp_failure_upper": 0.019225396825396826,
+      "power": 0.17210000000000003,
+      "power_mcse": 0.004892394661668816,
+      "power_failure_lower": 0.17210000000000003,
+      "power_failure_upper": 0.17210000000000003,
+      "empty": 0.268,
+      "empty_mcse": 0.014013292702729519,
+      "empty_failure_lower": 0.268,
+      "empty_failure_upper": 0.268,
+      "marginal_null_rejection": 0.0597,
+      "marginal_null_rejection_mcse": 0.0024065954586722092,
+      "marginal_null_rejection_failure_lower": 0.0597,
+      "marginal_null_rejection_failure_upper": 0.0597
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_hc3style_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.004166666666666666,
+      "fdp_mcse": 0.0018596557290374075,
+      "fdp_failure_lower": 0.004166666666666666,
+      "fdp_failure_upper": 0.004166666666666666,
+      "power": 0.0357,
+      "power_mcse": 0.002311028093912069,
+      "power_failure_lower": 0.0357,
+      "power_failure_upper": 0.0357,
+      "empty": 0.753,
+      "empty_mcse": 0.013644675781314012,
+      "empty_failure_lower": 0.753,
+      "empty_failure_upper": 0.753,
+      "marginal_null_rejection": 0.019899999999999998,
+      "marginal_null_rejection_mcse": 0.0013841625287176018,
+      "marginal_null_rejection_failure_lower": 0.019899999999999998,
+      "marginal_null_rejection_failure_upper": 0.019899999999999998
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_hc3style_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.009066666666666666,
+      "fdp_mcse": 0.002260682201759169,
+      "fdp_failure_lower": 0.009066666666666666,
+      "fdp_failure_upper": 0.009066666666666666,
+      "power": 0.11970000000000001,
+      "power_mcse": 0.0040716690052714855,
+      "power_failure_lower": 0.11970000000000001,
+      "power_failure_upper": 0.11970000000000001,
+      "empty": 0.395,
+      "empty_mcse": 0.015466551464829328,
+      "empty_failure_lower": 0.395,
+      "empty_failure_upper": 0.395,
+      "marginal_null_rejection": 0.0457,
+      "marginal_null_rejection_mcse": 0.002103790848904885,
+      "marginal_null_rejection_failure_lower": 0.0457,
+      "marginal_null_rejection_failure_upper": 0.0457
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_hc3style_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.011445238095238095,
+      "fdp_mcse": 0.002337823486839216,
+      "fdp_failure_lower": 0.011445238095238095,
+      "fdp_failure_upper": 0.011445238095238095,
+      "power": 0.1216,
+      "power_mcse": 0.0041965522814628505,
+      "power_failure_lower": 0.1216,
+      "power_failure_upper": 0.1216,
+      "empty": 0.387,
+      "empty_mcse": 0.015410011955494015,
+      "empty_failure_lower": 0.387,
+      "empty_failure_upper": 0.387,
+      "marginal_null_rejection": 0.0442,
+      "marginal_null_rejection_mcse": 0.0020470834254007705,
+      "marginal_null_rejection_failure_lower": 0.0442,
+      "marginal_null_rejection_failure_upper": 0.0442
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_knockoff_plus_pilot",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.056048370828517886,
+      "fdp_mcse": 0.003392199892318168,
+      "fdp_failure_lower": 0.056048370828517886,
+      "fdp_failure_upper": 0.056048370828517886,
+      "power": 0.252,
+      "power_mcse": 0.012933029933594962,
+      "power_failure_lower": 0.252,
+      "power_failure_upper": 0.252,
+      "empty": 0.722,
+      "empty_mcse": 0.014174516461485273,
+      "empty_failure_lower": 0.722,
+      "empty_failure_upper": 0.722
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h1_knockoff_plus_oracle",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.05777333480502986,
+      "fdp_mcse": 0.003376756020538698,
+      "fdp_failure_lower": 0.05777333480502986,
+      "fdp_failure_upper": 0.05777333480502986,
+      "power": 0.26630000000000004,
+      "power_mcse": 0.013080726868772066,
+      "power_failure_lower": 0.26630000000000004,
+      "power_failure_upper": 0.26630000000000004,
+      "empty": 0.704,
+      "empty_mcse": 0.014442734941575042,
+      "empty_failure_lower": 0.704,
+      "empty_failure_upper": 0.704
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_hc0_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.008575757575757575,
+      "fdp_mcse": 0.0008702488670871249,
+      "fdp_failure_lower": 0.008575757575757575,
+      "fdp_failure_upper": 0.008575757575757575,
+      "power": 0.9997999999999999,
+      "power_mcse": 0.0001413505570557823,
+      "power_failure_lower": 0.9997999999999999,
+      "power_failure_upper": 0.9997999999999999,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.033100000000000004,
+      "marginal_null_rejection_mcse": 0.0018214575777952412,
+      "marginal_null_rejection_failure_lower": 0.033100000000000004,
+      "marginal_null_rejection_failure_upper": 0.033100000000000004
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_hc0_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.02678321678321679,
+      "fdp_mcse": 0.0015319834994361192,
+      "fdp_failure_lower": 0.02678321678321679,
+      "fdp_failure_upper": 0.02678321678321679,
+      "power": 1.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 1.0,
+      "power_failure_upper": 1.0,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.0775,
+      "marginal_null_rejection_mcse": 0.0026515619511489415,
+      "marginal_null_rejection_failure_lower": 0.0775,
+      "marginal_null_rejection_failure_upper": 0.0775
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_hc0_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.02552097902097902,
+      "fdp_mcse": 0.0015104201961369248,
+      "fdp_failure_lower": 0.02552097902097902,
+      "fdp_failure_upper": 0.02552097902097902,
+      "power": 1.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 1.0,
+      "power_failure_upper": 1.0,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.07790000000000001,
+      "marginal_null_rejection_mcse": 0.002769342748606474,
+      "marginal_null_rejection_failure_lower": 0.07790000000000001,
+      "marginal_null_rejection_failure_upper": 0.07790000000000001
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_hc3style_wald_pilot_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.0031000000000000003,
+      "fdp_mcse": 0.0005228677303015203,
+      "fdp_failure_lower": 0.0031000000000000003,
+      "fdp_failure_upper": 0.0031000000000000003,
+      "power": 0.9996,
+      "power_mcse": 0.0001996994739098726,
+      "power_failure_lower": 0.9996,
+      "power_failure_upper": 0.9996,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.0155,
+      "marginal_null_rejection_mcse": 0.0012455124653335677,
+      "marginal_null_rejection_failure_lower": 0.0155,
+      "marginal_null_rejection_failure_upper": 0.0155,
+      "fdr_diagnostic": true,
+      "marginal_diagnostic": true,
+      "calibration_diagnostic_complete": true
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_hc3style_wald_naive_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.009791375291375292,
+      "fdp_mcse": 0.0009436902445675248,
+      "fdp_failure_lower": 0.009791375291375292,
+      "fdp_failure_upper": 0.009791375291375292,
+      "power": 0.9997999999999999,
+      "power_mcse": 0.0001413505570557823,
+      "power_failure_lower": 0.9997999999999999,
+      "power_failure_upper": 0.9997999999999999,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.0357,
+      "marginal_null_rejection_mcse": 0.0018812360428848503,
+      "marginal_null_rejection_failure_lower": 0.0357,
+      "marginal_null_rejection_failure_upper": 0.0357
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_hc3style_wald_oracle_by",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.008106060606060606,
+      "fdp_mcse": 0.0008573638480254756,
+      "fdp_failure_lower": 0.008106060606060606,
+      "fdp_failure_upper": 0.008106060606060606,
+      "power": 1.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 1.0,
+      "power_failure_upper": 1.0,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0,
+      "marginal_null_rejection": 0.0342,
+      "marginal_null_rejection_mcse": 0.0018476400552525844,
+      "marginal_null_rejection_failure_lower": 0.0342,
+      "marginal_null_rejection_failure_upper": 0.0342
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_knockoff_plus_pilot",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.07275909852101801,
+      "fdp_mcse": 0.0029926336422384245,
+      "fdp_failure_lower": 0.07275909852101801,
+      "fdp_failure_upper": 0.07275909852101801,
+      "power": 0.9967,
+      "power_mcse": 0.0017384280635482539,
+      "power_failure_lower": 0.9967,
+      "power_failure_upper": 0.9967,
+      "empty": 0.003,
+      "empty_mcse": 0.0017303161543469434,
+      "empty_failure_lower": 0.003,
+      "empty_failure_upper": 0.003
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "method": "h2_knockoff_plus_oracle",
+      "repetitions": 1000,
+      "n": 1600,
+      "m": 400,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdp": 0.07411765565016339,
+      "fdp_mcse": 0.0030437989350498265,
+      "fdp_failure_lower": 0.07411765565016339,
+      "fdp_failure_upper": 0.07411765565016339,
+      "power": 1.0,
+      "power_mcse": 0.0,
+      "power_failure_lower": 1.0,
+      "power_failure_upper": 1.0,
+      "empty": 0.0,
+      "empty_mcse": 0.0,
+      "empty_failure_lower": 0.0,
+      "empty_failure_upper": 0.0
+    }
+  ],
+  "paired": [
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.013209523809523808,
+      "mcse": 0.002806622009538993
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.12100000000000001,
+      "mcse": 0.0040614646982948775
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.408,
+      "mcse": 0.015549205052920803
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01439206349206349,
+      "mcse": 0.0032758692978764265
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.11869999999999999,
+      "mcse": 0.005326225556496709
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.397,
+      "mcse": 0.019793503549972724
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0006666666666666668,
+      "mcse": 0.00056508346225962
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0177,
+      "mcse": 0.00160601659060213
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.088,
+      "mcse": 0.008963053962592012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.004233333333333334,
+      "mcse": 0.001992749341695467
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0663,
+      "mcse": 0.003134347481396109
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.27,
+      "mcse": 0.01404625563263382
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.006611904761904761,
+      "mcse": 0.0030208938530762114
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0682,
+      "mcse": 0.00472769617373104
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.278,
+      "mcse": 0.020325578199134435
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05121503749518456,
+      "mcse": 0.0038598310372751554
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.19860000000000003,
+      "mcse": 0.01326325578257292
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.057,
+      "mcse": 0.02040017566510561
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.052940001471696516,
+      "mcse": 0.0038736400420996257
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.21290000000000003,
+      "mcse": 0.013266483693488247
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.039,
+      "mcse": 0.02058890242103505
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.003742424242424243,
+      "mcse": 0.002134661923819261
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9464000000000001,
+      "mcse": 0.00284871113929706
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.02194988344988345,
+      "mcse": 0.0024503271583622486
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9466,
+      "mcse": 0.0028489570998097807
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.02068764568764569,
+      "mcse": 0.0024187706907946977
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9466,
+      "mcse": 0.0028489570998097807
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0017333333333333333,
+      "mcse": 0.002004957304579608
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9462,
+      "mcse": 0.0028484511008043784
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.004958041958041958,
+      "mcse": 0.00216835477955389
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9464000000000001,
+      "mcse": 0.00284871113929706
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.003272727272727273,
+      "mcse": 0.002063244043793345
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9466,
+      "mcse": 0.0028489570998097807
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06792576518768469,
+      "mcse": 0.0034724194147817506
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.9433,
+      "mcse": 0.0033445920971467203
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.662,
+      "mcse": 0.015032697096063034
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06928432231683004,
+      "mcse": 0.0035433158709836017
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.9466,
+      "mcse": 0.0028489570998097807
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.665,
+      "mcse": 0.014933117490932629
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0011825396825396821,
+      "mcse": 0.0036651734504101795
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0023,
+      "mcse": 0.006188942802532029
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.011,
+      "mcse": 0.018526257642120337
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.013876190476190476,
+      "mcse": 0.002809839700894511
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.13870000000000002,
+      "mcse": 0.0042603357215670766
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.496,
+      "mcse": 0.015818793703510844
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008976190476190474,
+      "mcse": 0.0025322637379526867
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.054700000000000006,
+      "mcse": 0.0028611354557406222
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.138,
+      "mcse": 0.010912152632504508
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.006597619047619048,
+      "mcse": 0.0034496785554421405
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0528,
+      "mcse": 0.0056960165558576645
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.13,
+      "mcse": 0.019221588630221734
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.03800551368566075,
+      "mcse": 0.00433873195128021
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.07759999999999999,
+      "mcse": 0.013611889050514758
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.465,
+      "mcse": 0.019574426125895956
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.03973047766217271,
+      "mcse": 0.004425953083568826
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.09190000000000001,
+      "mcse": 0.013617996909965865
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.447,
+      "mcse": 0.019585059983941194
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.009467099567099567,
+      "mcse": 0.0028474105227466366
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8254,
+      "mcse": 0.004803948159370366
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.00874035964035964,
+      "mcse": 0.0031045908408572536
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8256,
+      "mcse": 0.004809133785596713
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.007478121878121881,
+      "mcse": 0.0031880231902631944
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8256,
+      "mcse": 0.004809133785596713
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.014942857142857141,
+      "mcse": 0.002744481119048104
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8252,
+      "mcse": 0.004802918698877593
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.00825148185148185,
+      "mcse": 0.0028624945633108226
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8254,
+      "mcse": 0.004803948159370366
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.009936796536796536,
+      "mcse": 0.0028628517552812113
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8256,
+      "mcse": 0.004809133785596713
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05471624137816089,
+      "mcse": 0.004078166330465724
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.8223,
+      "mcse": 0.005085132109254249
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.254,
+      "mcse": 0.013844698468210698
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05607479850730624,
+      "mcse": 0.004101669766278543
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.8256,
+      "mcse": 0.004809133785596713
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.257,
+      "mcse": 0.013825416526895028
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.015058730158730157,
+      "mcse": 0.003257966635657215
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.1364,
+      "mcse": 0.005099121595043703
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.485,
+      "mcse": 0.019082430116186436
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.010158730158730159,
+      "mcse": 0.003505492144060953
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.05239999999999999,
+      "mcse": 0.005797227600141973
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.127,
+      "mcse": 0.01967887848070256
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.00778015873015873,
+      "mcse": 0.0018542799330860493
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0505,
+      "mcse": 0.0026127718186968753
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.119,
+      "mcse": 0.01024421514533661
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.03682297400312106,
+      "mcse": 0.00426055916059785
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.0799,
+      "mcse": 0.013393482570839275
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.454,
+      "mcse": 0.019137665747165987
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.038547937979633025,
+      "mcse": 0.0043706725039147866
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.09419999999999999,
+      "mcse": 0.013949944837201364
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.436,
+      "mcse": 0.02030557352837679
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.010649639249639251,
+      "mcse": 0.002819502829671824
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8277,
+      "mcse": 0.004893532124821156
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.007557819957819959,
+      "mcse": 0.0030815995264392403
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8279000000000001,
+      "mcse": 0.0048923946616688165
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.006295582195582197,
+      "mcse": 0.002944392264372863
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8279000000000001,
+      "mcse": 0.0048923946616688165
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.016125396825396827,
+      "mcse": 0.0027181542628731165
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8275,
+      "mcse": 0.004892615628443306
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.009434021534021534,
+      "mcse": 0.0028448554640523554
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8277,
+      "mcse": 0.004893532124821156
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.011119336219336218,
+      "mcse": 0.00276964330059583
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8279000000000001,
+      "mcse": 0.0048923946616688165
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.053533701695621196,
+      "mcse": 0.003909280695302741
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.8246,
+      "mcse": 0.005244267569674754
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.265,
+      "mcse": 0.014176599591438563
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05489225882476657,
+      "mcse": 0.004068202524285022
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.8279000000000001,
+      "mcse": 0.0048923946616688165
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.268,
+      "mcse": 0.014013292702729519
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.004900000000000001,
+      "mcse": 0.002029257416751561
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.084,
+      "mcse": 0.003437414117591277
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.358,
+      "mcse": 0.015167928865407633
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0072785714285714285,
+      "mcse": 0.003003200050403284
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0859,
+      "mcse": 0.004419357500895432
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.366,
+      "mcse": 0.019555726179981827
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05188170416185123,
+      "mcse": 0.003842595845716308
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.21630000000000002,
+      "mcse": 0.013132279572365445
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.031,
+      "mcse": 0.019246023210248125
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.05360666813836319,
+      "mcse": 0.003827943125037443
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.23060000000000003,
+      "mcse": 0.013139112461512623
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.049,
+      "mcse": 0.01962100874022495
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0044090909090909085,
+      "mcse": 0.0020705527532172098
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9641000000000001,
+      "mcse": 0.002312257887117381
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.02261655011655012,
+      "mcse": 0.0024054194756499693
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9642999999999999,
+      "mcse": 0.002311028093912069
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.021354312354312354,
+      "mcse": 0.0023895416721610224
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9642999999999999,
+      "mcse": 0.002311028093912069
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0010666666666666665,
+      "mcse": 0.001938445069239305
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9639000000000001,
+      "mcse": 0.002313469719305213
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005624708624708624,
+      "mcse": 0.0021048865002177503
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9641000000000001,
+      "mcse": 0.002312257887117381
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.00393939393939394,
+      "mcse": 0.002019655945852214
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.9642999999999999,
+      "mcse": 0.002311028093912069
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06859243185435136,
+      "mcse": 0.0034544812268453126
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.961,
+      "mcse": 0.002850811661111117
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.75,
+      "mcse": 0.013699915608779773
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06995098898349673,
+      "mcse": 0.003516369059481113
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.9642999999999999,
+      "mcse": 0.002311028093912069
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.753,
+      "mcse": 0.013644675781314012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0023785714285714282,
+      "mcse": 0.003258376472773943
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0019,
+      "mcse": 0.005279608343832358
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.008,
+      "mcse": 0.020306362262806906
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.046981704161851226,
+      "mcse": 0.004037965322915579
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.13229999999999997,
+      "mcse": 0.013528848426223858
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.327,
+      "mcse": 0.020457015654525214
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.048706668138363184,
+      "mcse": 0.004080515697824975
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.14660000000000004,
+      "mcse": 0.013409259794942008
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.309,
+      "mcse": 0.020686878617784437
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0004909090909090909,
+      "mcse": 0.002410673411267221
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8801000000000001,
+      "mcse": 0.004068235556176725
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01771655011655012,
+      "mcse": 0.002686790877809991
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8803000000000002,
+      "mcse": 0.004071669005271486
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.016454312354312356,
+      "mcse": 0.002722206369053315
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8803000000000002,
+      "mcse": 0.004071669005271486
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.005966666666666667,
+      "mcse": 0.0022997124744941772
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8799000000000001,
+      "mcse": 0.004067251225647678
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0007247086247086246,
+      "mcse": 0.0024426685713223447
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8801000000000001,
+      "mcse": 0.004068235556176725
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0009606060606060607,
+      "mcse": 0.0023884570053580695
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8803000000000002,
+      "mcse": 0.004071669005271486
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06369243185435136,
+      "mcse": 0.0037735383031349684
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.8770000000000001,
+      "mcse": 0.004432905441203393
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.392,
+      "mcse": 0.015510531150691668
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06505098898349672,
+      "mcse": 0.003777509617906801
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.8803000000000002,
+      "mcse": 0.004071669005271486
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.395,
+      "mcse": 0.015466551464829328
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.044603132733279795,
+      "mcse": 0.004062192299362773
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.13040000000000002,
+      "mcse": 0.013227653261664021
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.335,
+      "mcse": 0.0201290879122771
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.046328096709791766,
+      "mcse": 0.004213500013941811
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.1447,
+      "mcse": 0.013671093914124388
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.317,
+      "mcse": 0.021329931222720012
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.002869480519480519,
+      "mcse": 0.00251439548536572
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8782000000000001,
+      "mcse": 0.004197902140639105
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01533797868797869,
+      "mcse": 0.0028159599298482473
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8784000000000001,
+      "mcse": 0.0041965522814628505
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.014075740925740926,
+      "mcse": 0.0026492363221549495
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8784000000000001,
+      "mcse": 0.0041965522814628505
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.008345238095238095,
+      "mcse": 0.0024103611403077977
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.878,
+      "mcse": 0.004199242030847191
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0016538628038628034,
+      "mcse": 0.0025282912559970775
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8782000000000001,
+      "mcse": 0.004197902140639105
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.003339177489177488,
+      "mcse": 0.002490828891382174
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.8784000000000001,
+      "mcse": 0.0041965522814628505
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06131386042577994,
+      "mcse": 0.0037391854745430202
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.8751,
+      "mcse": 0.00452442929665836
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.384,
+      "mcse": 0.015452597929888129
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0626724175549253,
+      "mcse": 0.0038926524496555853
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.8784000000000001,
+      "mcse": 0.0041965522814628505
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.387,
+      "mcse": 0.015410011955494015
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.001724963976511965,
+      "mcse": 0.004341501939591306
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.014299999999999997,
+      "mcse": 0.016577705822288267
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h1_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.018,
+      "mcse": 0.01833063043138484
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.04747261325276031,
+      "mcse": 0.0035100947365585946
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7477999999999999,
+      "mcse": 0.012929901095613313
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0292651540453011,
+      "mcse": 0.0037023109252693714
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.748,
+      "mcse": 0.012933029933594962
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.030527391807538867,
+      "mcse": 0.0037278719990706433
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.748,
+      "mcse": 0.012933029933594962
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.05294837082851788,
+      "mcse": 0.003427989806585318
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7476,
+      "mcse": 0.012926768402866254
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.046256995537142596,
+      "mcse": 0.003522643404676634
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7477999999999999,
+      "mcse": 0.012929901095613313
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.04794231022245727,
+      "mcse": 0.00353501508914972
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.748,
+      "mcse": 0.012933029933594962
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01671072769250014,
+      "mcse": 0.004259668011500639
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.7447,
+      "mcse": 0.01299156228829661
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.719,
+      "mcse": 0.014221154708434942
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.018069284821645503,
+      "mcse": 0.0045098890591235225
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.748,
+      "mcse": 0.012933029933594962
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.722,
+      "mcse": 0.014174516461485273
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.049197577229272274,
+      "mcse": 0.0034797732402484165
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7335,
+      "mcse": 0.013077414452741368
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.03099011802181307,
+      "mcse": 0.003709977557569462
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7336999999999999,
+      "mcse": 0.013080726868772066
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.03225235578405083,
+      "mcse": 0.0037022594446720516
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7336999999999999,
+      "mcse": 0.013080726868772066
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.05467333480502985,
+      "mcse": 0.0034154887471864286
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7333,
+      "mcse": 0.013074098134940019
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.04798195951365456,
+      "mcse": 0.0034982624280363306
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7335,
+      "mcse": 0.013077414452741368
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.049667274198969255,
+      "mcse": 0.003490285114685775
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.7336999999999999,
+      "mcse": 0.013080726868772066
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.014985763715988174,
+      "mcse": 0.0042780693661760814
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": -0.7303999999999999,
+      "mcse": 0.013135767521861387
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": 0.701,
+      "mcse": 0.014484778521220433
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01634432084513354,
+      "mcse": 0.004282987371987695
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.7336999999999999,
+      "mcse": 0.013080726868772066
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h1_knockoff_plus_oracle",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.704,
+      "mcse": 0.014442734941575042
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.01820745920745921,
+      "mcse": 0.0012576797461977777
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.016945221445221446,
+      "mcse": 0.0017005286348405408
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0054757575757575765,
+      "mcse": 0.0006916519587327109
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0012156177156177157,
+      "mcse": 0.0003869171752221672
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0004696969696969695,
+      "mcse": 0.0012051280623975576
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06418334094526046,
+      "mcse": 0.003111212271818839
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0031,
+      "mcse": 0.0017445439041289367
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0655418980744058,
+      "mcse": 0.0030829723719952534
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0012622377622377625,
+      "mcse": 0.002025026302147998
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc0_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.023683216783216787,
+      "mcse": 0.0014344592786246658
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0003999999999999999,
+      "mcse": 0.0001996994739098726
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01699184149184149,
+      "mcse": 0.0012208239146661653
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01867715617715618,
+      "mcse": 0.0017155515974863228
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.04597588173780125,
+      "mcse": 0.0033383023591026955
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0033,
+      "mcse": 0.001738428063548254
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.047334438866946604,
+      "mcse": 0.00321430938671262
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.02242097902097902,
+      "mcse": 0.0015831392554165465
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0003999999999999999,
+      "mcse": 0.0001996994739098726
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_pilot_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.01572960372960373,
+      "mcse": 0.0017199392345728334
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.017414918414918417,
+      "mcse": 0.0012605704293592746
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.047238119500039005,
+      "mcse": 0.0031578907763322333
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0033,
+      "mcse": 0.001738428063548254
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.04859667662918437,
+      "mcse": 0.003373006056408309
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc0_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0066913752913752905,
+      "mcse": 0.0007794089522978182
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.005006060606060606,
+      "mcse": 0.0009893439937622593
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.0003999999999999999,
+      "mcse": 0.0001996994739098726
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06965909852101802,
+      "mcse": 0.003048554795210352
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0029,
+      "mcse": 0.0017506155073729506
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0710176556501634,
+      "mcse": 0.0030758034767451657
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0003999999999999999,
+      "mcse": 0.0001996994739098726
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_pilot_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.001685314685314685,
+      "mcse": 0.0012549685013414893
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_hc3style_wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06296772322964274,
+      "mcse": 0.0031335222496802154
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0031,
+      "mcse": 0.0017445439041289367
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0643262803587881,
+      "mcse": 0.003103176253812985
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.00019999999999999996,
+      "mcse": 0.0001413505570557823
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_naive_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.06465303791495743,
+      "mcse": 0.003027488870011993
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.0033,
+      "mcse": 0.001738428063548254
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.0017303161543469434
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0660115950441028,
+      "mcse": 0.0031457011240937226
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_hc3style_wald_oracle_by",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.0,
+      "mcse": 0.0
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0013585571291453644,
+      "mcse": 0.003798490235125417
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0033,
+      "mcse": 0.001738428063548254
+    },
+    {
+      "configuration": "harmonic_n1600_m400_p20",
+      "left": "h2_knockoff_plus_pilot",
+      "right": "h2_knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.003,
+      "mcse": 0.0017303161543469434
+    }
+  ],
+  "timing": {
+    "h1_oracle_knockoff": {
+      "total_seconds": 0.9769011023454368
+    },
+    "h1_oracle_wald": {
+      "total_seconds": 6.549597498495132
+    },
+    "h1_pilot_knockoff": {
+      "total_seconds": 1.0007220935076475
+    },
+    "h1_pilot_wald": {
+      "total_seconds": 6.8221305722836405
+    },
+    "h2_oracle_knockoff": {
+      "total_seconds": 0.44439004524610937
+    },
+    "h2_oracle_wald": {
+      "total_seconds": 13.610330573981628
+    },
+    "h2_pilot_knockoff": {
+      "total_seconds": 0.4461830286309123
+    },
+    "h2_pilot_wald": {
+      "total_seconds": 13.826741260010749
+    },
+    "reconstruct_original_response_witnesses": {
+      "total_seconds": 33.18544912151992
+    }
+  },
+  "failed_repetitions": [],
+  "independent_datasets_added": 0,
+  "reanalysed_datasets": 1000,
+  "max_rss_bytes_macos": 142393344,
+  "scope": "Paired reanalysis of the same 3000 SP06.4 datasets; no independent datasets added; H2/HC3-style chosen before execution"
+}

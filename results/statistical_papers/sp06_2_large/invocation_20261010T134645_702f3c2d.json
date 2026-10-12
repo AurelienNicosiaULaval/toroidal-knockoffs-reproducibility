@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "id": "harmonic_n32000_m400",
+      "new_repetitions": 1000,
+      "recorded_repetitions": 1000,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 340.1321017919108,
+      "summary_sha256": "4fe0a406dcd6f7bc2d1ec1b812260d255feea6f7ce710e77ae246cd8c07a35ba",
+      "failed_repetitions": []
+    }
+  ],
+  "elapsed_seconds": 340.185828207992,
+  "max_rss_bytes_macos": 234749952,
+  "scope": "Targeted post-sp06_1 independent study at n/m=80 with identical connected star and response; no finite-sample or misspecification guarantee"
+}

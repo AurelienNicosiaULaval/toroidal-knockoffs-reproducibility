@@ -1,0 +1,98 @@
+{
+  "records": [
+    {
+      "g": 0.2,
+      "kappa": 0.04000000000000001,
+      "coefficient": [
+        0.002007802346675322,
+        -9.140285456029277e-05,
+        5.52712831954028e-07,
+        -9.140285456028669e-05
+      ],
+      "leading_coefficient": [
+        0.0020000000000000005,
+        -0.00010000000000000005,
+        0.0,
+        -0.00010000000000000005
+      ],
+      "scaled_remainder_max": 0.0032763511584273453,
+      "null_slope": -0.0009135784364451685,
+      "slope_over_leading": 0.9135784364451682,
+      "grid_coefficient_difference": 6.554205420582215e-15,
+      "coordinate_check_difference": 8.933825901280557e-17,
+      "oracle_null_score": 6.085084693074894e-18,
+      "minimum_eigenvalue": 0.4500016655193707
+    },
+    {
+      "g": 0.1,
+      "kappa": 0.010000000000000002,
+      "coefficient": [
+        0.00025027974604401943,
+        -5.961612585127028e-06,
+        1.1369459387880929e-08,
+        -5.961612585108981e-06
+      ],
+      "leading_coefficient": [
+        0.00025000000000000006,
+        -6.250000000000003e-06,
+        0.0,
+        -6.250000000000003e-06
+      ],
+      "scaled_remainder_max": 0.003560338455444713,
+      "null_slope": -0.00011924183903084502,
+      "slope_over_leading": 0.95393471224676,
+      "grid_coefficient_difference": 3.642919299551295e-17,
+      "coordinate_check_difference": 1.5260145577733475e-16,
+      "oracle_null_score": 1.8046883974200123e-17,
+      "minimum_eigenvalue": 0.4750142092484694
+    },
+    {
+      "g": 0.05,
+      "kappa": 0.0025000000000000005,
+      "coefficient": [
+        3.1259265507394784e-05,
+        -3.8125198118669696e-07,
+        2.0675486978081778e-10,
+        -3.8125198115591837e-07
+      ],
+      "leading_coefficient": [
+        3.125000000000001e-05,
+        -3.906250000000002e-07,
+        0.0,
+        -3.906250000000002e-07
+      ],
+      "scaled_remainder_max": 0.0037259205342933866,
+      "null_slope": -1.525094040132003e-05,
+      "slope_over_leading": 0.9760601856844817,
+      "grid_coefficient_difference": 3.6666838676776984e-17,
+      "coordinate_check_difference": 1.8734335914191713e-16,
+      "oracle_null_score": 3.077858326482031e-17,
+      "minimum_eigenvalue": 0.48750278948103126
+    },
+    {
+      "g": 0.025,
+      "kappa": 0.0006250000000000001,
+      "coefficient": [
+        3.906547452802209e-06,
+        -2.411513671716951e-08,
+        3.503162173683995e-12,
+        -2.411513669896463e-08
+      ],
+      "leading_coefficient": [
+        3.906250000000001e-06,
+        -2.441406250000001e-08,
+        0.0,
+        -2.441406250000001e-08
+      ],
+      "scaled_remainder_max": 0.0038143304705324445,
+      "null_slope": -1.9292485383911613e-06,
+      "slope_over_leading": 0.9877752516562743,
+      "grid_coefficient_difference": 2.2605254645575694e-17,
+      "coordinate_check_difference": 1.2944611609824394e-16,
+      "oracle_null_score": 1.82048787799202e-17,
+      "minimum_eigenvalue": 0.4937504167894821
+    }
+  ],
+  "seconds": 17.243924875045195,
+  "scope": "four deterministic quadrature checks, not iid-data simulations or certified bounds"
+}

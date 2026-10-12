@@ -1,0 +1,135 @@
+{
+  "config": {
+    "id": "v6_0_gaussian_limits",
+    "seed": 106150,
+    "draws": 200000,
+    "pairs": 10,
+    "ratios": [
+      16000.0,
+      1.0
+    ]
+  },
+  "records": [
+    {
+      "ratio": 16000.0,
+      "method": "oracle",
+      "fdr": 0.07848263011691611,
+      "mcse": 0.0002186329955701037,
+      "predicted_integral": {
+        "scale": 0.0,
+        "nodes": 256,
+        "fdr": 0.07847765017033759,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 1.0,
+      "normalized_offdiag_covariance": 0.0
+    },
+    {
+      "ratio": 16000.0,
+      "method": "pooled",
+      "fdr": 0.12648231246630046,
+      "mcse": 0.00035899133523422977,
+      "predicted_integral": {
+        "scale": 0.6570970531120637,
+        "nodes": 256,
+        "fdr": 0.12689315352842906,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 1.4317765372085582,
+      "normalized_offdiag_covariance": 0.43177653720855824
+    },
+    {
+      "ratio": 16000.0,
+      "method": "separate",
+      "fdr": 0.0781923105553717,
+      "mcse": 0.00021893194508723835,
+      "predicted_integral": {
+        "scale": 0.0,
+        "nodes": 256,
+        "fdr": 0.07847765017033759,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 5.317765372085582,
+      "normalized_offdiag_covariance": 0.0
+    },
+    {
+      "ratio": 16000.0,
+      "method": "shared_single",
+      "fdr": 0.19557252839609654,
+      "mcse": 0.0004931830946402725,
+      "predicted_integral": {
+        "scale": 2.077923331618754,
+        "nodes": 256,
+        "fdr": 0.19601640379838026,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 5.317765372085582,
+      "normalized_offdiag_covariance": 4.317765372085582
+    },
+    {
+      "ratio": 1.0,
+      "method": "oracle",
+      "fdr": 0.07848263011691611,
+      "mcse": 0.0002186329955701037,
+      "predicted_integral": {
+        "scale": 0.0,
+        "nodes": 256,
+        "fdr": 0.07847765017033759,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 1.0,
+      "normalized_offdiag_covariance": 0.0
+    },
+    {
+      "ratio": 1.0,
+      "method": "pooled",
+      "fdr": 0.07852640351349717,
+      "mcse": 0.00021866636839840543,
+      "predicted_integral": {
+        "scale": 0.005194808329046885,
+        "nodes": 256,
+        "fdr": 0.07848287732869677,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 1.0000269860335755,
+      "normalized_offdiag_covariance": 2.698603357553489e-05
+    },
+    {
+      "ratio": 1.0,
+      "method": "separate",
+      "fdr": 0.07848015631814007,
+      "mcse": 0.00021859367273689335,
+      "predicted_integral": {
+        "scale": 0.0,
+        "nodes": 256,
+        "fdr": 0.07847765017033759,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 1.0002698603357554,
+      "normalized_offdiag_covariance": 0.0
+    },
+    {
+      "ratio": 1.0,
+      "method": "shared_single",
+      "fdr": 0.07852390468063068,
+      "mcse": 0.00021880808261929945,
+      "predicted_integral": {
+        "scale": 0.016427426327801593,
+        "nodes": 256,
+        "fdr": 0.0785298981420475,
+        "truncation_error_upper": 7.619853033042884e-24,
+        "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+      },
+      "normalized_variance": 1.0002698603357554,
+      "normalized_offdiag_covariance": 0.0002698603357553489
+    }
+  ],
+  "scope": "200000 Gaussian vectors, reused across two ratios and four schemes; not toroidal data sets. Predictions condition on reused numerical v5 constants."
+}

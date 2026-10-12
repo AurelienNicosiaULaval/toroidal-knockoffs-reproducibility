@@ -1,0 +1,36 @@
+{
+  "config": {
+    "id": "v5_0_limit_prediction",
+    "seed": 930831,
+    "draws": 1000000,
+    "chunk": 20000,
+    "n_over_m": [
+      0.0,
+      1.0,
+      2285.714285714286,
+      16000.0
+    ],
+    "derivative_step": 0.0005
+  },
+  "scales": [
+    0.0,
+    0.005194808329046885,
+    0.24835934139541735,
+    0.6570970531120637
+  ],
+  "predicted_fdr": [
+    0.0784409676495675,
+    0.07844119440419402,
+    0.08929213291030436,
+    0.12704180959876896
+  ],
+  "mcse": [
+    9.801662753060161e-05,
+    9.802641136269684e-05,
+    0.0001139782185528885,
+    0.00016097861417429507
+  ],
+  "exact_fair_sign_fdr": 0.07847765017033835,
+  "exact_fraction": "467686735/5959489536",
+  "scope": "Gaussian local-in-estimation limit. Monte Carlo errors condition on the calibrated ratio constant."
+}

@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "id": "v5_0_harmonic_cost_n400",
+      "rep": 0,
+      "score_vectors": 8,
+      "maximum_absolute_error": 0.0,
+      "bitwise_scores": true
+    },
+    {
+      "id": "v5_0_regular_n80000",
+      "rep": 0,
+      "score_vectors": 4,
+      "maximum_absolute_error": 0.0,
+      "bitwise_scores": true
+    },
+    {
+      "id": "v5_0_regular_n320000",
+      "rep": 0,
+      "score_vectors": 4,
+      "maximum_absolute_error": 0.0,
+      "bitwise_scores": true
+    }
+  ],
+  "score_vectors": 16,
+  "scope": "Three individual seeds, not a second execution of the main studies",
+  "seconds_this_execution": 2.8306935410946608
+}

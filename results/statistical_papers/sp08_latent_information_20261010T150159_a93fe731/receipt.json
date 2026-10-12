@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "redraw": {
+    "gamma": 0.0,
+    "max_swap_error": 0.0,
+    "minimum_design_eigenvalue": 0.5,
+    "information": 0.5,
+    "null_derivative": [
+      -1.0,
+      0.0
+    ],
+    "derivative_finite_difference_error": 3.649014423956487e-11,
+    "null_influence_covariance": [
+      [
+        4.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "relative_information": 0.5,
+    "half_bound_valid": true,
+    "general_bound_valid": true
+  },
+  "valid_nonredraw_control": {
+    "gamma": 0.25,
+    "max_swap_error": 8.673617379884035e-19,
+    "minimum_design_eigenvalue": 0.375,
+    "information": 0.5,
+    "null_derivative": [
+      -1.0,
+      0.0
+    ],
+    "derivative_finite_difference_error": 5.2460591426495284e-11,
+    "null_influence_covariance": [
+      [
+        3.200000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "relative_information": 0.6249999999999997,
+    "half_bound_valid": false,
+    "general_bound_valid": true
+  },
+  "pilot_ratio_three_bound_exact": "591842767/5959489536",
+  "bound_decimal": 0.09931098350367168,
+  "states_per_joint_table": 256,
+  "new_selection_datasets": 0,
+  "elapsed_seconds": 0.0511994999833405,
+  "scope": "Exact finite-angle sums and independent regression finite differences; not continuous VM or FDR simulation",
+  "sha256": {
+    "scripts/statistical_papers/sp08_latent_information_check.py": "44c15e211b1ef275abe8f56af931b8f5f049db9eba1c6fb17177a375fb790e08",
+    "docs/statistical_papers/SP08_LATENT_INFORMATION_EN_20261010.md": "049aff145417744eabae276fcb93cfb11b195f95b4e9e3e94c9cb11c3fc2cdce"
+  }
+}

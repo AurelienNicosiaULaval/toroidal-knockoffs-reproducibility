@@ -1,0 +1,25 @@
+{
+  "config": {
+    "id": "v5_0_influence_identity",
+    "seed": 930832,
+    "batches": 20,
+    "rows": 50000,
+    "gamma": 1.0,
+    "kappa": 1.0
+  },
+  "code": {
+    "src/v5/validate_influence.py": "00326a4f24f31b645a611108cb07c6214d67447063664159f4ca6eac0885c3c3",
+    "src/v5/tracking.py": "9c56278013ed26d2ba5e24443d964178c4f56ebae120793264f0f0d8e3d8a8a3",
+    "src/v4/core.py": "152442f8975bdf615a00653998aa4c05b5e739e8a535d6be18aaa9bf7de35089",
+    "src/toroidal.py": "98180bdab88fd2eb422bb265f4dd93537cd5e5ec2709396e517d5b898bfbe342",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e",
+    "results/v5/v5_0_influence/population_80_32_+0.json": "aa073ed6a4f99b3d1e0c7ec4edd5970cc3bbe3d85ef8bc953d75feb25ccc25f4",
+    "results/v5/v5_0_influence/summary.json": "3d184d56048e3b17c480c4bb53f82f10dde4f2a38c69a60502075dc81dbcf3a2"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "9cbdd52bb18e157ffd65e7589c563eb6d5f7e15ae40da05ed20eea574450d82a",
+  "created_utc": "2026-09-30T15:21:12.215369+00:00"
+}

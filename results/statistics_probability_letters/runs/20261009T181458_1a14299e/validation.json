@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scientific_body_preserved": true,
+  "preserved_formal_results": 11,
+  "preserved_tables": 4,
+  "abstract_words": 38,
+  "cross_references": [
+    {
+      "document": "main",
+      "labels": 8,
+      "calls": 6,
+      "references": 8
+    },
+    {
+      "document": "supplement",
+      "labels": 35,
+      "calls": 51,
+      "references": 13
+    }
+  ],
+  "ai_declaration": "OpenAI Codex and Anthropic Claude assisted with mathematical arguments, code and manuscript preparation. The author reviewed and edited the material and takes full responsibility for its content.",
+  "ai_declaration_sha256": "ccabcb151b1f5c50240b73a9f594a3f11820095ba9080833d60efc1691aac3a1",
+  "fair_sign_fdr_exact": "467686735/5959489536",
+  "rho6_bound_exact": "591842767/5959489536",
+  "gaussian_records_checked": 250000,
+  "new_toroidal_simulations": 0,
+  "main_sha256": "8c4290eec4c8a80fed264b54daaa141cf58c09afe6373ba8e8a426d68de73e14",
+  "supplement_sha256": "6d84262b75f2bcfe89cbebe20a61abc887cd3a2adbf147087bbd4809aad213ea",
+  "seconds": 0.04988445807248354,
+  "scope": "Preservation and saved-output checks, not a novelty certificate or an external review"
+}

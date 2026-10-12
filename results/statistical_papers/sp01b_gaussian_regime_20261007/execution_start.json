@@ -1,0 +1,54 @@
+{
+  "status": "started",
+  "config": {
+    "id": "sp01b_gaussian_regime_20261007",
+    "question": "Quantify the already proved common-Gaussian score limit, not finite-sample toroidal FDR.",
+    "nulls": 10,
+    "strong_signals": 10,
+    "q": 0.1,
+    "variances": [
+      0.0,
+      2.698603357553489e-05,
+      0.001,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.431776537,
+      1.0
+    ],
+    "quadrature_nodes": [
+      256,
+      512
+    ],
+    "draws": 250000,
+    "chunk": 10000,
+    "seed": 2026100701,
+    "crossing_bracket": [
+      0.0,
+      0.2
+    ],
+    "checks": {
+      "zero_variance_absolute_tolerance": 1e-09,
+      "quadrature_difference_tolerance": 1e-07,
+      "monte_carlo_standard_errors": 4.0,
+      "threshold_checks_per_variance": 200
+    },
+    "retained_calibration": "provenance/v6/influence_v5_input.json",
+    "retained_calibration_scope": "Known numerical parameters g=kappa=1; not analytically certified by the small-interaction counterexample theorem.",
+    "technical_revision": "sp01b replaces matrix-vector products with explicit reductions and rejects nonfinite integrals. The first execution emitted NumPy matmul floating-point warnings despite finite results. All random streams and scientific settings are unchanged; these are replays of the same 250000 Gaussian vectors, not additional independent observations.",
+    "scope": "Gaussian limit calculation and independent Gaussian Monte Carlo; no new toroidal data sets, no practical finite-sample certificate. Quadrature convergence is not interval certification."
+  },
+  "input_sha256": {
+    "configs/statistical_papers/sp01b_gaussian_regime.json": "90579bdb98ca5b5ebceffc1a1687a322ead2eb28e49076af05e3ecc6c1e5b908",
+    "scripts/statistical_papers/sp01_gaussian_regime.py": "01dc2b776d94b919f0efb239140592262a7e3a64b4bb0c2edd2ccc9a7ec671a2",
+    "provenance/v6/influence_v5_input.json": "3d184d56048e3b17c480c4bb53f82f10dde4f2a38c69a60502075dc81dbcf3a2",
+    "src/v5/normal_integral.py": "31275e0ae2a9acdd369da9a05c1a59b625ab7d856baced38c62611431075d908",
+    "manuscript/obstacles_v3.tex": "689377a62c97cd2cbf943abdd150154d0b0fc907390ed9a3f881ef3ccfa29dba"
+  },
+  "python": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "python_version": "3.9.6",
+  "numpy_version": "2.0.2"
+}

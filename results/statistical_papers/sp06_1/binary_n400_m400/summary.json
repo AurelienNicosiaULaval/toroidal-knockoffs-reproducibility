@@ -1,0 +1,501 @@
+{
+  "config": {
+    "version": "sp06_1",
+    "seed": 10810100,
+    "p": 12,
+    "repetitions": 1000,
+    "field_phase": 0.7,
+    "root_field_norm": 3.0,
+    "leaf_field_norm": 0.2,
+    "singular_values": [
+      0.8,
+      0.5
+    ],
+    "left_rotation_step": 0.17,
+    "right_rotation_step": -0.11,
+    "active": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "continuous_scale": 3.0,
+    "binary_scale": 1.5,
+    "binary_intercept": -0.25,
+    "noise_sd": 1.0,
+    "ridge_penalty": 1.0,
+    "pilot_penalty_numerator": 1.0,
+    "pilot_optimizer_maxiter": 2000,
+    "pilot_gradient_tolerance": 3e-06,
+    "level": 0.1,
+    "marginal_level": 0.05,
+    "gate_mcse_multiplier": 3.0,
+    "method_order": [
+      "wald_pilot_by",
+      "wald_naive_by",
+      "wald_oracle_by",
+      "knockoff_plus_pilot",
+      "knockoff_plus_oracle"
+    ],
+    "cases": [
+      {
+        "id": "harmonic_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "harmonic",
+        "central": true
+      },
+      {
+        "id": "harmonic_n1600_m400",
+        "n": 1600,
+        "m": 400,
+        "response": "harmonic",
+        "central": true
+      },
+      {
+        "id": "binary_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "binary",
+        "central": true
+      },
+      {
+        "id": "null_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "null",
+        "central": true
+      },
+      {
+        "id": "harmonic_n1600_m40",
+        "n": 1600,
+        "m": 40,
+        "response": "harmonic",
+        "central": false
+      }
+    ],
+    "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee",
+    "id": "binary_n400_m400",
+    "n": 400,
+    "m": 400,
+    "response": "binary",
+    "central": true
+  },
+  "summary": [
+    {
+      "configuration": "binary_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_pilot_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.021,
+      "fdp_mcse": 0.004424768759899051,
+      "fdp_failure_lower": 0.021,
+      "fdp_failure_upper": 0.021,
+      "power": 0.008499999999999999,
+      "power_mcse": 0.001274291278596519,
+      "power_failure_lower": 0.008499999999999999,
+      "power_failure_upper": 0.008499999999999999,
+      "empty": 0.934,
+      "empty_mcse": 0.007855297938697534,
+      "empty_failure_lower": 0.934,
+      "empty_failure_upper": 0.934,
+      "marginal_null_rejection": 0.04966666666666667,
+      "marginal_null_rejection_mcse": 0.002786253335950724,
+      "marginal_null_rejection_failure_lower": 0.04966666666666667,
+      "marginal_null_rejection_failure_upper": 0.04966666666666667,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdr_diagnostic": true,
+      "marginal_diagnostic": true,
+      "calibration_diagnostic_complete": true
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_naive_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.0385,
+      "fdp_mcse": 0.00592758125654016,
+      "fdp_failure_lower": 0.0385,
+      "fdp_failure_upper": 0.0385,
+      "power": 0.014333333333333332,
+      "power_mcse": 0.001621887606555148,
+      "power_failure_lower": 0.014333333333333332,
+      "power_failure_upper": 0.014333333333333332,
+      "empty": 0.887,
+      "empty_mcse": 0.010016552866696775,
+      "empty_failure_lower": 0.887,
+      "empty_failure_upper": 0.887,
+      "marginal_null_rejection": 0.07383333333333333,
+      "marginal_null_rejection_mcse": 0.0034285329474142198,
+      "marginal_null_rejection_failure_lower": 0.07383333333333333,
+      "marginal_null_rejection_failure_upper": 0.07383333333333333,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_oracle_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.050166666666666665,
+      "fdp_mcse": 0.0066541403004966955,
+      "fdp_failure_lower": 0.050166666666666665,
+      "fdp_failure_upper": 0.050166666666666665,
+      "power": 0.0165,
+      "power_mcse": 0.001774137602018954,
+      "power_failure_lower": 0.0165,
+      "power_failure_upper": 0.0165,
+      "empty": 0.869,
+      "empty_mcse": 0.0106748748448379,
+      "empty_failure_lower": 0.869,
+      "empty_failure_upper": 0.869,
+      "marginal_null_rejection": 0.08,
+      "marginal_null_rejection_mcse": 0.00351996703759048,
+      "marginal_null_rejection_failure_lower": 0.08,
+      "marginal_null_rejection_failure_upper": 0.08,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "knockoff_plus_pilot",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.0021000000000000003,
+      "fdp_mcse": 0.001051996528842513,
+      "fdp_failure_lower": 0.0021000000000000003,
+      "fdp_failure_upper": 0.0021000000000000003,
+      "power": 0.0036666666666666666,
+      "power_mcse": 0.0018532227158208573,
+      "power_failure_lower": 0.0036666666666666666,
+      "power_failure_upper": 0.0036666666666666666,
+      "empty": 0.996,
+      "empty_mcse": 0.001996994739098726,
+      "empty_failure_lower": 0.996,
+      "empty_failure_upper": 0.996,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "knockoff_plus_oracle",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.0029454545454545454,
+      "fdp_mcse": 0.001204282049161083,
+      "fdp_failure_lower": 0.0029454545454545454,
+      "fdp_failure_upper": 0.0029454545454545454,
+      "power": 0.0055,
+      "power_mcse": 0.002249031230287419,
+      "power_failure_lower": 0.0055,
+      "power_failure_upper": 0.0055,
+      "empty": 0.994,
+      "empty_mcse": 0.002443352199329841,
+      "empty_failure_lower": 0.994,
+      "empty_failure_upper": 0.994,
+      "failures": 0,
+      "failure_rate": 0.0
+    }
+  ],
+  "paired": [
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0175,
+      "mcse": 0.004077627215719583
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.005833333333333332,
+      "mcse": 0.0010248687288950827
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.047,
+      "mcse": 0.006695956678163012
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.029166666666666664,
+      "mcse": 0.008060041552335875
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.008,
+      "mcse": 0.0021203894942115513
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.065,
+      "mcse": 0.013150967566987151
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0189,
+      "mcse": 0.004557802492820806
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.004833333333333332,
+      "mcse": 0.002262884978562539
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.062,
+      "mcse": 0.008137703743822468
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.018054545454545455,
+      "mcse": 0.004544469854212109
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0029999999999999988,
+      "mcse": 0.0025380871401067414
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.06,
+      "mcse": 0.00815269688302383
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.011666666666666665,
+      "mcse": 0.008903735099436818
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.002166666666666667,
+      "mcse": 0.002291409197779223
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.018,
+      "mcse": 0.014278651192597988
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0364,
+      "mcse": 0.006033637220735498
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.010666666666666665,
+      "mcse": 0.002483982723404124
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.109,
+      "mcse": 0.010257885952974142
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.03555454545454545,
+      "mcse": 0.006012171640362368
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.008833333333333332,
+      "mcse": 0.002740952092600213
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.107,
+      "mcse": 0.01027894238998627
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.04806666666666666,
+      "mcse": 0.006752421102560315
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.012833333333333332,
+      "mcse": 0.00258903839030114
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.127,
+      "mcse": 0.010908253296930265
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.04722121212121212,
+      "mcse": 0.006709895713604494
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.011,
+      "mcse": 0.002896098649457126
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.125,
+      "mcse": 0.01093135373567677
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.0008454545454545455,
+      "mcse": 0.0016029270859934978
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": -0.0018333333333333337,
+      "mcse": 0.0029211212943462224
+    },
+    {
+      "configuration": "binary_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": 0.002,
+      "mcse": 0.0031632271505546363
+    }
+  ],
+  "timing": {
+    "estimated_statistics": {
+      "total_seconds": 1.7184286671690643,
+      "mean_seconds_per_attempt": 0.0017184286671690643,
+      "median_seconds_per_attempt": 0.0016941454960033298
+    },
+    "estimated_witness": {
+      "total_seconds": 0.89690295397304,
+      "mean_seconds_per_attempt": 0.00089690295397304,
+      "median_seconds_per_attempt": 0.0008904584683477879
+    },
+    "oracle_statistics": {
+      "total_seconds": 1.68637955468148,
+      "mean_seconds_per_attempt": 0.00168637955468148,
+      "median_seconds_per_attempt": 0.0016611875034868717
+    },
+    "oracle_witness": {
+      "total_seconds": 0.8971340726129711,
+      "mean_seconds_per_attempt": 0.000897134072612971,
+      "median_seconds_per_attempt": 0.0008864374831318855
+    },
+    "original_sampling": {
+      "total_seconds": 1.651263183215633,
+      "mean_seconds_per_attempt": 0.001651263183215633,
+      "median_seconds_per_attempt": 0.001621145405806601
+    },
+    "pilot_estimation": {
+      "total_seconds": 24.80459068994969,
+      "mean_seconds_per_attempt": 0.024804590689949692,
+      "median_seconds_per_attempt": 0.02463677094783634
+    },
+    "pilot_sampling": {
+      "total_seconds": 1.6268694214522839,
+      "mean_seconds_per_attempt": 0.0016268694214522839,
+      "median_seconds_per_attempt": 0.001611145562492311
+    },
+    "pilot_sandwich": {
+      "total_seconds": 2.3205596171319485,
+      "mean_seconds_per_attempt": 0.0023205596171319487,
+      "median_seconds_per_attempt": 0.002302833483554423
+    }
+  },
+  "failed_repetitions": [],
+  "max_rss_bytes_macos": 110444544,
+  "individual_recomputed_selections": 5000,
+  "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee"
+}

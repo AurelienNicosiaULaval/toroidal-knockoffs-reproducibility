@@ -1,0 +1,74 @@
+{
+  "inputs": [
+    {
+      "config": "configs/v5/regular_n320000.json",
+      "config_sha256": "c743dc517d656681fb69fc09a2c859399c06e9498a3333af8a2a14f48ecbc4ac",
+      "manifest_sha256": "2caf00c065bb5a600340680c549e3966e97f50ba9fc9aea204fe8e9d02d569dd",
+      "study": "v5_0_regular_n320000",
+      "datasets": 1000,
+      "archived_execution_seconds": 7038.909466042416,
+      "archived_failures": 0
+    },
+    {
+      "config": "configs/v5/regular_n80000.json",
+      "config_sha256": "63028ff4958e59cda08daad828fca3b359204011ed47ce85c4c340c7b007fe1a",
+      "manifest_sha256": "63cca58f2640be88d5f4117fe121fef2be5faedeb7df28842160fcb95d46d3db",
+      "study": "v5_0_regular_n80000",
+      "datasets": 1000,
+      "archived_execution_seconds": 2528.1383135400247,
+      "archived_failures": 0
+    },
+    {
+      "config": "configs/v5/harmonic_cost_n1600.json",
+      "config_sha256": "a0ec21f596d3fd415342a1327411cca94256f3f565a5a3ef09c120214fd053b1",
+      "manifest_sha256": "51e175dcd08d4524fdf9c8e25ee8fd6de79ae8597cc7f5d21927789724d931bd",
+      "study": "v5_0_harmonic_cost_n1600",
+      "datasets": 1000,
+      "archived_execution_seconds": 73.41540787508711,
+      "archived_failures": 0
+    },
+    {
+      "config": "configs/v5/harmonic_cost_n400.json",
+      "config_sha256": "ff41a337df3a56c859f75d8ac835555a5f5298c08380e6086252a2e6c2d080e5",
+      "manifest_sha256": "b2b9e8e2c3ee494be73881936c5de03fc8e60260b31a6b3b5d1205d12bcaa5d2",
+      "study": "v5_0_harmonic_cost_n400",
+      "datasets": 1000,
+      "archived_execution_seconds": 23.62030729209073,
+      "archived_failures": 0
+    },
+    {
+      "config": "configs/v6/small.json",
+      "config_sha256": "245992a099da858ad9221ae394bcec2e9ea4040dccf397d6d5893b69b41f3f6c",
+      "manifest_sha256": "989dd5d2686e9f5850f3ed1d3e6e8c1fc774d7d7f066562ab7125ea657f20d6c",
+      "study": "v6_0_small",
+      "datasets": 1000,
+      "archived_execution_seconds": 905.2196845840663,
+      "archived_failures": 0
+    },
+    {
+      "config": "configs/v6/large.json",
+      "config_sha256": "adc77850011a7fd0a2eaa38ee5a5d6448fd74a923c994b259c7787587a2320f1",
+      "manifest_sha256": "786a64875d6757adb0592e1f00191d773e6e739d34cf31722457e85da5cabdaf",
+      "study": "v6_0_large",
+      "datasets": 1000,
+      "archived_execution_seconds": 3605.9393026649486,
+      "archived_failures": 0
+    },
+    {
+      "config": "configs/v6/comparable.json",
+      "config_sha256": "0630bdf94d4f9624aab83bf8c163e87d4421e24194c7a7809c9193090b51ceec",
+      "manifest_sha256": "d0440fb811c007b860fb88617d5075904753441277442bbbd1dd33fb7b73eb8f",
+      "study": "v6_0_comparable",
+      "datasets": 1000,
+      "archived_execution_seconds": 1013.8809434999712,
+      "archived_failures": 0
+    }
+  ],
+  "retained_datasets": 7000,
+  "method_evaluations": 36000,
+  "all_decisions_recomputed": true,
+  "aggregate_max_tolerance": 5e-15,
+  "failures": 0,
+  "seconds": 4.0801042090170085,
+  "scope": "reaggregation of saved data, not new simulation of these datasets"
+}

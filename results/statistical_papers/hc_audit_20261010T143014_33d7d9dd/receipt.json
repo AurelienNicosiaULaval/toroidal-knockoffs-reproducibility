@@ -1,0 +1,89 @@
+{
+  "status": "complete",
+  "cases": [
+    {
+      "version": "sp06_3",
+      "configuration": "binary_n400_m400",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_1"
+    },
+    {
+      "version": "sp06_3",
+      "configuration": "harmonic_n1600_m40",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_1"
+    },
+    {
+      "version": "sp06_3",
+      "configuration": "harmonic_n1600_m400",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_1"
+    },
+    {
+      "version": "sp06_3",
+      "configuration": "harmonic_n400_m400",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_1"
+    },
+    {
+      "version": "sp06_3",
+      "configuration": "null_n400_m400",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_1"
+    },
+    {
+      "version": "sp06_4_hc",
+      "configuration": "binary_n1600_m400_p20",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_4"
+    },
+    {
+      "version": "sp06_4_hc",
+      "configuration": "harmonic_n1600_m1600_p20",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_4"
+    },
+    {
+      "version": "sp06_4_hc",
+      "configuration": "harmonic_n1600_m400_p20",
+      "records": 1000,
+      "decisions": 16000,
+      "source_version": "sp06_4"
+    }
+  ],
+  "max_absolute_errors": {
+    "variance": 1.7763568394002505e-14,
+    "pvalue": 3.5860203695392556e-14,
+    "summary": 0.0,
+    "paired": 0.0
+  },
+  "minimum_HC3style_covariance_increment_eigenvalue": 7.208066533847309e-05,
+  "source_sha256": {
+    "results/statistical_papers/sp06_3/binary_n400_m400/summary.json": "60a745fede8c037dd1d824df6dc90bcb53961d28529a5c1ac0e994126144d565",
+    "results/statistical_papers/sp06_3/binary_n400_m400/manifest.json": "8a59dce50bab840984a2d1498bc87ac723a2e82f66b7fb55d265ac3f395eb2ae",
+    "results/statistical_papers/sp06_3/harmonic_n1600_m40/summary.json": "b0727d792d5e6f4dbec3067464314572ca3c978b5b8c6967a04528f076502b8f",
+    "results/statistical_papers/sp06_3/harmonic_n1600_m40/manifest.json": "8f8ed01d81e0d3c5287fb0fc82abbd3aaceb7b50a9996283934464c8decbe1d6",
+    "results/statistical_papers/sp06_3/harmonic_n1600_m400/summary.json": "ffcb26f8197af16aca3f223e4a5e33586aa26a6043a4e4de42a600d83767005c",
+    "results/statistical_papers/sp06_3/harmonic_n1600_m400/manifest.json": "a025f0839426d7eb56ef08e3bfe1028887aaa8daa817e3a63d91a9d434d83947",
+    "results/statistical_papers/sp06_3/harmonic_n400_m400/summary.json": "e4b5166428e0906fba50d7d482de678edbe168dad6c40166a2f51a477e8a828e",
+    "results/statistical_papers/sp06_3/harmonic_n400_m400/manifest.json": "f52b52f2d995aec00d6fa988193832dd900ffd5b154dc694e891313657c8fe0f",
+    "results/statistical_papers/sp06_3/null_n400_m400/summary.json": "dfa9a5806c2b660c8ed066111cbb275ccf402517b15f7c5487f2866d04882bfd",
+    "results/statistical_papers/sp06_3/null_n400_m400/manifest.json": "f273797ce9c4992d76e38f7b330bf7a164951331c60aa6b4dfd839dfa6d84226",
+    "results/statistical_papers/sp06_4_hc/binary_n1600_m400_p20/summary.json": "a133e039c8208dcb9efd438686c5e05d993b40676d54801f0cbe7888bd3d1c21",
+    "results/statistical_papers/sp06_4_hc/binary_n1600_m400_p20/manifest.json": "92e7c1107d95db84d0c469c2b5e2e69d77bdc9910bfed270a66be82677b212bc",
+    "results/statistical_papers/sp06_4_hc/harmonic_n1600_m1600_p20/summary.json": "c32c242bd8cce5e75b905d9384ffcaec5b25a3f096147f38a1b2e7f25f956afa",
+    "results/statistical_papers/sp06_4_hc/harmonic_n1600_m1600_p20/manifest.json": "b5453e76a833854ce2b31f36a6e4e7e907bdecd9622373143b0ea392f5672438",
+    "results/statistical_papers/sp06_4_hc/harmonic_n1600_m400_p20/summary.json": "5bb34909f0b05e7c62582cb0ff7af17a1c0fc44232ce3ca0b73e95ca3f25d722",
+    "results/statistical_papers/sp06_4_hc/harmonic_n1600_m400_p20/manifest.json": "d018a169d10ce121b24e54ba011cad934a50bee147fa36ccf5e58ba0c8a19027"
+  },
+  "script_sha256": "9e50c4adbd3585d67c03fb9a035ec3c88b64a107e7912dbe4182a4bc9919c8c2",
+  "elapsed_seconds": 32.182238625129685,
+  "scope": "Independent recalculation of saved SP06.3 and SP06.4-HC results; 8000 paired reanalyses, 128000 decisions; zero new datasets and no seed replays"
+}

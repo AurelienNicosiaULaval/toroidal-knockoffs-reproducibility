@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "producer_folder": "results/statistical_papers/sp14_represented_20261010T193859_53f423c7",
+  "cache": "/Users/aureliennicosia/.cache/edge_sp14_inputs_bb272472",
+  "new_independent_datasets": 0,
+  "checked_datasets": 9,
+  "QR_checked_datasets": 3,
+  "scope": "Independent implementation checks; no statistical calibration",
+  "source_sha256": "cd7e46b9f8b76c9b1b21752a2cc3eb01de01c52a966859632c46b7f7fa276787",
+  "producer_receipt_sha256": "f69de65f614429b222b87936635a6998df0e78e48ed3c2d28534a736188d3dd6",
+  "direct_VM_maximum_error": 1.7763568394002505e-15,
+  "negative_controls": {
+    "wrong_penalty_detected": 3,
+    "H1_nonrepresentation_detected": 3
+  },
+  "elapsed_seconds": 0.20742970798164606,
+  "files_sha256": {
+    "independent_checks.csv": "8eb2977c969abef91707573dabc9e334d805dc32c689156d97a2f13c533fa0b5",
+    "producer_receipt.json": "f69de65f614429b222b87936635a6998df0e78e48ed3c2d28534a736188d3dd6",
+    "executed_source.py": "cd7e46b9f8b76c9b1b21752a2cc3eb01de01c52a966859632c46b7f7fa276787"
+  }
+}

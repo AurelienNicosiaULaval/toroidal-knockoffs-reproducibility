@@ -1,0 +1,11 @@
+# SP06.2 : isoler l'erreur pilote lorsque l'échantillon de sélection grandit
+
+Expérience ciblée fixée après lecture de SP06.1, avant tout tirage SP06.2. Elle ne remplace aucun des cinq scénarios précédents. Elle ne constitue pas une confirmation entièrement prédéfinie au début de SP06.1.
+
+SP06.1 montre une baisse des rejets marginaux avec la variance pilote, mais aussi un oracle Wald trop libéral à 5 % dans les petits échantillons et une perte de puissance. Pour isoler l'effet du pilote de l'effet du nombre de colonnes de régression, conserver exactement la famille de covariables, les champs, matrices, réponse continue de second harmonique, six angles actifs, H=1, pénalités et cinq méthodes, et porter n à 32 000 avec m=400. Le rapport n/m est 80. La dimension de design est 48, donc cette expérience diminue fortement sa proportion dans n tout en renforçant le rôle relatif du pilote.
+
+Fixer 1 000 répétitions indépendantes, nouvelle graine de base 10620100. Les trois graines 0,499,999 seront rejouées. Le pilote demeure appris sur 400 sujets séparés. Les originaux sont iid exacts par le même rejet. Aucun paramètre ni aucun signal ne sera ajusté d'après les résultats de SP06.2.
+
+Conserver les mêmes diagnostics : FDR moyenne de Wald corrigé au plus 0,1 plus trois erreurs Monte-Carlo, rejet marginal moyen nul au seuil 5 % au plus 0,05 plus trois erreurs Monte-Carlo, et aucun échec pour déclarer le diagnostic complet. Les résultats sans correction et oracle, les coûts de puissance, les échecs, les sélections vides et le filtre knockoff+ restent visibles. Une différence appariée est mesurée ; elle ne constitue pas une preuve de dominance générale. Le biais de la pseudo-vraisemblance pénalisée et les restes de Taylor ne disparaissent pas exactement à m=400.
+
+Cette expérience ajoute 1 000 nouveaux jeux, distincts des 5 000 précédents. Le code de SP06.1 est réutilisé sans modification avec une nouvelle configuration et une nouvelle version de sortie. La configuration contient l'empreinte de ce protocole. Elle n'est pas silencieusement mélangée aux résultats du même nom en SP06.1. La sensibilité aux harmoniques et à la correction HC3 sera analysée séparément sur les données déjà fixées ; elle ne sera pas comptée comme de nouveaux jeux indépendants.

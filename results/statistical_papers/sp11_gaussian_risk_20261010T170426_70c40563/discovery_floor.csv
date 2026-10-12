@@ -1,0 +1,5 @@
+p,target_q,rank,pilot_factor,critical_inflation,critical_m_over_n,interpretation
+20,0.1,1,1.0,0.22976200759311924,2.1761648291541724,"Below this m/n bound, the dimension-based input is <1/p"
+20,0.1,3,1.0,0.11424560565065385,4.376535947727618,"Below this m/n bound, the dimension-based input is <1/p"
+20,0.1,10,1.0,0.05868679753376051,8.519803789129353,"Below this m/n bound, the dimension-based input is <1/p"
+20,0.1,20,1.0,0.04080187819592065,12.254337841976838,"Below this m/n bound, the dimension-based input is <1/p"

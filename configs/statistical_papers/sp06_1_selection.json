@@ -1,0 +1,33 @@
+{
+  "version": "sp06_1",
+  "seed": 10610100,
+  "p": 12,
+  "repetitions": 1000,
+  "field_phase": 0.7,
+  "root_field_norm": 3.0,
+  "leaf_field_norm": 0.2,
+  "singular_values": [0.8, 0.5],
+  "left_rotation_step": 0.17,
+  "right_rotation_step": -0.11,
+  "active": [0,1,2,3,4,5],
+  "continuous_scale": 3.0,
+  "binary_scale": 1.5,
+  "binary_intercept": -0.25,
+  "noise_sd": 1.0,
+  "ridge_penalty": 1.0,
+  "pilot_penalty_numerator": 1.0,
+  "pilot_optimizer_maxiter": 2000,
+  "pilot_gradient_tolerance": 0.000003,
+  "level": 0.1,
+  "marginal_level": 0.05,
+  "gate_mcse_multiplier": 3.0,
+  "method_order": ["wald_pilot_by","wald_naive_by","wald_oracle_by","knockoff_plus_pilot","knockoff_plus_oracle"],
+  "cases": [
+    {"id":"harmonic_n400_m400","n":400,"m":400,"response":"harmonic","central":true},
+    {"id":"harmonic_n1600_m400","n":1600,"m":400,"response":"harmonic","central":true},
+    {"id":"binary_n400_m400","n":400,"m":400,"response":"binary","central":true},
+    {"id":"null_n400_m400","n":400,"m":400,"response":"null","central":true},
+    {"id":"harmonic_n1600_m40","n":1600,"m":40,"response":"harmonic","central":false}
+  ],
+  "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee"
+}

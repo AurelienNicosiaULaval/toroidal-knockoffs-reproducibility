@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "source_sha256": "261bff3f9d635b8019c21c6839da774cec1be3d11c11a04def2d3fc4ae4c92a2",
+  "protocol_sha256": "83057581f7918f212bd643aff8535e8dab7a3e1404e00ad3e670b975c38dfc1c",
+  "new_selection_datasets": 9,
+  "selection_subjects": 126000,
+  "pilot_subjects": 360,
+  "scope": "Nine diagnostics, not an FDR calibration or numerical proof of the limit",
+  "iid_originals": "Independent von Mises root and increment, no MCMC",
+  "root_seed": 2026101201,
+  "root_spawn_keys": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ]
+  ],
+  "maximum_quadrature_difference": 2.0460022565060854e-13,
+  "oracle_alpha": 2.2222051601518222,
+  "oracle_null_slope": -0.0009135784466170855,
+  "files_sha256": {
+    "K10_n2000_m40.npz": "c52ca7a7863e7f5efa696b4f2c5707b32b823ce6c62ba64de70615306a15d136",
+    "K20_n8000_m40.npz": "99b459f72f802ecd8d9a73af69ea911b612964546e9f9d17aa09a17d0ecb0a2c",
+    "K20_n2000_m40.npz": "10df5f46930e8f821b92c58e9c3c446de9ff25bd804e530b8abf6508f4fb5d97",
+    "K5_n32000_m40.npz": "c98286f0c97639664db523327315ed7ffb4ee2725da3d9433e482f011968ff2d",
+    "K20_n32000_m40.npz": "63c68279bd846fb7a4f529846225b0ee29759e18d85c61b0a8cc20763835505c",
+    "K10_n8000_m40.npz": "5bb760ad6f7aeb46c6c6e9c5d6655f1dc0df52eb1b8c3a839cedc7be8b7f891e",
+    "diagnostics.csv": "811c6b875b165235d52d2d272055ea0bda192def65a565059c0f673a9c8449d0",
+    "oracle_population.json": "3828d01377cf8162809864c46514cf0f1ea174c2f0bd630cea880cba8270571a",
+    "quadratures.csv": "2bb43ab52b94eaccfe8101d300a08bf6482bbdea28d8d7744d7d45703e01eab4",
+    "configuration.json": "71c793036de565c128f04f4fd14f0536c985cbbbc029cc386fe04069cbedad1d",
+    "K5_n8000_m40.npz": "4e0f3271a1162ee4fe64bbcb6cd131bc68e92dc3ded2890d5396a184499dd73d",
+    "executed_source.py": "261bff3f9d635b8019c21c6839da774cec1be3d11c11a04def2d3fc4ae4c92a2",
+    "K5_n2000_m40.npz": "f874ccd792e91b7d59ef5d26b78916970c3bc6fb16c118a799e38fd5e916e0e1",
+    "K10_n32000_m40.npz": "1da750f84ade8cceffacbb05998afdad360f9a159f84bdd0c50cf7fab2f03ee3",
+    "protocol.md": "83057581f7918f212bd643aff8535e8dab7a3e1404e00ad3e670b975c38dfc1c"
+  },
+  "threshold_controls_passed": 8,
+  "fit_errors": [],
+  "elapsed_seconds": 7.808749291114509
+}

@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "protocol_sha256": "8ed780268cf9b108e73f6105f178bd41607925034d0f7802377efeb141d1a007",
+  "executed_source_sha256": "0f0ac551b447000e61e1bff043a8dc55ccf03c36a53347ec5f47a29923eac9f8",
+  "scope": "Synthetic Gaussian limiting scores; not toroidal data or finite-sample fitted-law guarantees",
+  "new_toroidal_selection_datasets": 0,
+  "new_toroidal_covariate_samples": 0,
+  "independent_gaussian_rows": 200000,
+  "matched_covariance_configurations": 9,
+  "methods_per_configuration": 2,
+  "gaussian_threshold_applications": 3600000,
+  "scalar_threshold_crosschecks": 18000,
+  "quadrature_rows": 42,
+  "quadrature_max_difference": 4.052314039881821e-15,
+  "outside_budget_control_detected": true,
+  "covariance_channels_checked": 9,
+  "file_sha256": {
+    "summary.csv": "892c391c697b36eee9e398da83792539a80aa3bea940d9324d070150f8a9925d",
+    "paired.csv": "a9ff25abb8488cd8aa1d2bd0985929f37be2e81f0e77d8d1d5a08939d2b95b5b",
+    "discovery_floor.csv": "cd7217dcc90a2b930f4d7636282245a3d23c0c3a734c5e5e14d0563901fac619",
+    "raw_noise.npz": "58ab17e6db74c38c9a75b60de58333bceb6c93458451aa55d4161b41e90bea1f",
+    "quadratures.csv": "5d589f06c71027a2f00c7903a120980cffc80f45a4708a935d7bdfbb45d026e7",
+    "executed_source.py": "0f0ac551b447000e61e1bff043a8dc55ccf03c36a53347ec5f47a29923eac9f8",
+    "individual_results.npz": "57d8f6fa30fbd07b81ab0a0dc282df907dee4577ed75eb26dc98d46e1b5cca06",
+    "protocol.md": "8ed780268cf9b108e73f6105f178bd41607925034d0f7802377efeb141d1a007"
+  },
+  "elapsed_seconds": 2.1369887080509216
+}

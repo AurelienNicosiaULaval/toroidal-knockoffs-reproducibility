@@ -1,0 +1,11 @@
+{
+  "first": 750,
+  "stop": 1000,
+  "newly_executed": 250,
+  "start_utc": "2026-10-01T01:05:27.848065+00:00",
+  "end_utc": "2026-10-01T01:20:29.804603+00:00",
+  "seconds": 901.9299109161366,
+  "successful": 250,
+  "failures": 0,
+  "peak_process_rss_bytes": 119160832
+}

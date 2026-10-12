@@ -1,0 +1,23 @@
+{
+  "id": "v5_0_regular_n80000",
+  "version": "v5.0-main-regular",
+  "seed": 1010810,
+  "gamma": 1.0,
+  "kappa": 1.0,
+  "pairs": 10,
+  "noise_sd": 0.5,
+  "n": 80000,
+  "m": 5,
+  "chunk": 8192,
+  "amplitude": 1.0,
+  "penalty": 5.0,
+  "q": 0.1,
+  "repetitions": 1000,
+  "responses": [
+    {
+      "name": "second_strong",
+      "harmonic": 2,
+      "local": false
+    }
+  ]
+}

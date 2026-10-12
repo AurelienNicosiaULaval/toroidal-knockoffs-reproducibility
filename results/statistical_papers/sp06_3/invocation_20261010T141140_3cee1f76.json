@@ -1,0 +1,77 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "case": "harmonic_n400_m400",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 21.486234250012785,
+      "summary_sha256": "e4b5166428e0906fba50d7d482de678edbe168dad6c40166a2f51a477e8a828e",
+      "failed_repetitions": []
+    },
+    {
+      "case": "harmonic_n1600_m400",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 38.5360631251242,
+      "summary_sha256": "ffcb26f8197af16aca3f223e4a5e33586aa26a6043a4e4de42a600d83767005c",
+      "failed_repetitions": []
+    },
+    {
+      "case": "binary_n400_m400",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 20.813149833818898,
+      "summary_sha256": "60a745fede8c037dd1d824df6dc90bcb53961d28529a5c1ac0e994126144d565",
+      "failed_repetitions": []
+    },
+    {
+      "case": "null_n400_m400",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 21.417272082995623,
+      "summary_sha256": "dfa9a5806c2b660c8ed066111cbb275ccf402517b15f7c5487f2866d04882bfd",
+      "failed_repetitions": []
+    },
+    {
+      "case": "harmonic_n1600_m40",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 39.00727087515406,
+      "summary_sha256": "b0727d792d5e6f4dbec3067464314572ca3c978b5b8c6967a04528f076502b8f",
+      "failed_repetitions": []
+    }
+  ],
+  "elapsed_seconds": 141.31199912517332,
+  "scope": "Paired reanalysis of the same 5000 SP06.1 datasets; no new independent selection datasets; harmonics and HC3-style choices fixed before this analysis"
+}

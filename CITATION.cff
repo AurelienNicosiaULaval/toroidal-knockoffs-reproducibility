@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this tagged code and simulation-data package when using it."
+title: "Toroidal knockoffs: code and simulation records"
+type: software
+authors:
+  - family-names: Nicosia
+    given-names: Aurélien
+version: 1.0.0
+date-released: 2026-10-12
+url: "https://github.com/AurelienNicosiaULaval/toroidal-knockoffs-reproducibility"
+repository-code: "https://github.com/AurelienNicosiaULaval/toroidal-knockoffs-reproducibility"

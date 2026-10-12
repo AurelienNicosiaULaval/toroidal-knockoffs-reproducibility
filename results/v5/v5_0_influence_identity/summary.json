@@ -1,0 +1,8 @@
+{
+  "derivative": -0.0674403836868908,
+  "mcse": 0.0013574967505346498,
+  "quadrature_derivative": -0.06711118578502442,
+  "standardized_difference": -0.2425036389492071,
+  "identity": "a = -E[psi r (cos U - A(g))]",
+  "scope": "Independent stochastic check, not a certified sign bound"
+}

@@ -1,0 +1,190 @@
+{
+  "status": "completed",
+  "config": {
+    "id": "sp01b_gaussian_regime_20261007",
+    "question": "Quantify the already proved common-Gaussian score limit, not finite-sample toroidal FDR.",
+    "nulls": 10,
+    "strong_signals": 10,
+    "q": 0.1,
+    "variances": [
+      0.0,
+      2.698603357553489e-05,
+      0.001,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.431776537,
+      1.0
+    ],
+    "quadrature_nodes": [
+      256,
+      512
+    ],
+    "draws": 250000,
+    "chunk": 10000,
+    "seed": 2026100701,
+    "crossing_bracket": [
+      0.0,
+      0.2
+    ],
+    "checks": {
+      "zero_variance_absolute_tolerance": 1e-09,
+      "quadrature_difference_tolerance": 1e-07,
+      "monte_carlo_standard_errors": 4.0,
+      "threshold_checks_per_variance": 200
+    },
+    "retained_calibration": "provenance/v6/influence_v5_input.json",
+    "retained_calibration_scope": "Known numerical parameters g=kappa=1; not analytically certified by the small-interaction counterexample theorem.",
+    "technical_revision": "sp01b replaces matrix-vector products with explicit reductions and rejects nonfinite integrals. The first execution emitted NumPy matmul floating-point warnings despite finite results. All random streams and scientific settings are unchanged; these are replays of the same 250000 Gaussian vectors, not additional independent observations.",
+    "scope": "Gaussian limit calculation and independent Gaussian Monte Carlo; no new toroidal data sets, no practical finite-sample certificate. Quadrature convergence is not interval certification."
+  },
+  "input_sha256": {
+    "configs/statistical_papers/sp01b_gaussian_regime.json": "90579bdb98ca5b5ebceffc1a1687a322ead2eb28e49076af05e3ecc6c1e5b908",
+    "scripts/statistical_papers/sp01_gaussian_regime.py": "01dc2b776d94b919f0efb239140592262a7e3a64b4bb0c2edd2ccc9a7ec671a2",
+    "provenance/v6/influence_v5_input.json": "3d184d56048e3b17c480c4bb53f82f10dde4f2a38c69a60502075dc81dbcf3a2",
+    "src/v5/normal_integral.py": "31275e0ae2a9acdd369da9a05c1a59b625ab7d856baced38c62611431075d908",
+    "manuscript/obstacles_v3.tex": "689377a62c97cd2cbf943abdd150154d0b0fc907390ed9a3f881ef3ccfa29dba"
+  },
+  "fair_sign_fdr_exact_formula": 0.07847765017033834,
+  "full_threshold_checks": 2200,
+  "rows": [
+    {
+      "common_variance": 0.0,
+      "fdr_256": 0.07847765017033875,
+      "fdr_512": 0.07847765017033742,
+      "tv_upper_bound": 0.07847765017033834,
+      "gaussian_mc_fdr": 0.07896549272846176,
+      "mcse": 0.00019685693043048458,
+      "paired_difference_from_zero": 0.0,
+      "paired_mcse": 0.0
+    },
+    {
+      "common_variance": 2.698603357553489e-05,
+      "fdr_256": 0.07848287732869791,
+      "fdr_512": 0.07848287732869662,
+      "tv_upper_bound": 0.07851029491620673,
+      "gaussian_mc_fdr": 0.07900319985569987,
+      "mcse": 0.00019687179158063933,
+      "paired_difference_from_zero": 3.770712723808697e-05,
+      "paired_mcse": 1.66492522218346e-05
+    },
+    {
+      "common_variance": 0.001,
+      "fdr_256": 0.07867099886980465,
+      "fdr_512": 0.07867099886980337,
+      "tv_upper_bound": 0.07968149207006134,
+      "gaussian_mc_fdr": 0.07917793031151854,
+      "mcse": 0.00019737940956465522,
+      "paired_difference_from_zero": 0.00021243758305677807,
+      "paired_mcse": 4.413060391397763e-05
+    },
+    {
+      "common_variance": 0.005,
+      "fdr_256": 0.0794372805868142,
+      "fdr_512": 0.0794372805868129,
+      "tv_upper_bound": 0.08438025313166528,
+      "gaussian_mc_fdr": 0.0800017185069832,
+      "mcse": 0.00019967402714062075,
+      "paired_difference_from_zero": 0.0010362257785214437,
+      "paired_mcse": 7.004491772191294e-05
+    },
+    {
+      "common_variance": 0.01,
+      "fdr_256": 0.08037948147733125,
+      "fdr_512": 0.08037948147732998,
+      "tv_upper_bound": 0.09000660506284017,
+      "gaussian_mc_fdr": 0.08091875183072861,
+      "mcse": 0.00020243012233462263,
+      "paired_difference_from_zero": 0.0019532591022668423,
+      "paired_mcse": 8.700323570169602e-05
+    },
+    {
+      "common_variance": 0.02,
+      "fdr_256": 0.0822138381382086,
+      "fdr_512": 0.08221383813820735,
+      "tv_upper_bound": 0.10052062764671119,
+      "gaussian_mc_fdr": 0.08269859117559426,
+      "mcse": 0.00020788619345005232,
+      "paired_difference_from_zero": 0.0037330984471325027,
+      "paired_mcse": 0.00010923194596314068
+    },
+    {
+      "common_variance": 0.05,
+      "fdr_256": 0.0873523367618122,
+      "fdr_512": 0.08735233676181103,
+      "tv_upper_bound": 0.12736572117458742,
+      "gaussian_mc_fdr": 0.08791523241687793,
+      "mcse": 0.00022290145085823482,
+      "paired_difference_from_zero": 0.008949739688416156,
+      "paired_mcse": 0.00014959443367218377
+    },
+    {
+      "common_variance": 0.1,
+      "fdr_256": 0.094894672302735,
+      "fdr_512": 0.09489467230273407,
+      "tv_upper_bound": 0.1615096876620948,
+      "gaussian_mc_fdr": 0.09553051129572179,
+      "mcse": 0.00024420419545090035,
+      "paired_difference_from_zero": 0.016565018567260052,
+      "paired_mcse": 0.0001911521889937212
+    },
+    {
+      "common_variance": 0.2,
+      "fdr_256": 0.10715339331315653,
+      "fdr_512": 0.10715339331315614,
+      "tv_upper_bound": 0.208157080873921,
+      "gaussian_mc_fdr": 0.10790237871949172,
+      "mcse": 0.00027640368399838684,
+      "paired_difference_from_zero": 0.02893688599102995,
+      "paired_mcse": 0.0002428703427635964
+    },
+    {
+      "common_variance": 0.431776537,
+      "fdr_256": 0.12689315351428004,
+      "fdr_512": 0.126893153514281,
+      "tv_upper_bound": 0.26971230626296994,
+      "gaussian_mc_fdr": 0.1277471363426735,
+      "mcse": 0.0003224141660586839,
+      "paired_difference_from_zero": 0.04878164361421172,
+      "paired_mcse": 0.00030737941094224815
+    },
+    {
+      "common_variance": 1.0,
+      "fdr_256": 0.1533035853392885,
+      "fdr_512": 0.1533035853392917,
+      "tv_upper_bound": 0.3384789755823664,
+      "gaussian_mc_fdr": 0.15416902679157787,
+      "mcse": 0.00037499203704351955,
+      "paired_difference_from_zero": 0.0752035340631161,
+      "paired_mcse": 0.00037608539205998963
+    }
+  ],
+  "numerical_crossing_variance_bracket": [
+    0.13851207385305317,
+    0.13851207385596354
+  ],
+  "crossing_quadrature_validation": {
+    "256": 0.10000000000002524,
+    "512": 0.10000000000002449
+  },
+  "crossing_scope": "One numerical crossing in the registered bracket; no proof of global monotonicity or interval certification.",
+  "tv_bound_eigenvalue_crossing": [
+    1.1948367832228541,
+    1.194836783251958
+  ],
+  "tv_sufficient_rho_using_c_bound": 5.1325010779998,
+  "retained_c": 2.698603357553489e-05,
+  "retained_c_mcse": 4.67624735867633e-08,
+  "calibrated_crossing_n_over_m": 5132.731843188738,
+  "calibration_scope": "Known numerical parameters g=kappa=1; not analytically certified by the small-interaction counterexample theorem.",
+  "seconds": 1.7315669999999999,
+  "scope": "Gaussian limit calculation and independent Gaussian Monte Carlo; no new toroidal data sets, no practical finite-sample certificate. Quadrature convergence is not interval certification.",
+  "output_sha256": {
+    "individual_gaussian_runs.npz": "8b6588b884f519bd2960e34fd6e4ce0dd6b2409c63d1f4487d6b4e86372cc3b4",
+    "summary.csv": "f72fee4fcaf46181136bfc5cdf95a4f83f375a194c158747817f9876f49fffa0",
+    "summary.json": "9f8c8f51b5dd3689ee6f2241ef938b504d24491fcab23fd3a7d3d9b8908e9f4a"
+  }
+}

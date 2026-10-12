@@ -1,0 +1,39 @@
+{
+  "config": {
+    "id": "v5_0_influence",
+    "version": "v5.0-influence-calibration",
+    "seed": 930801,
+    "gamma": 1.0,
+    "kappa": 1.0,
+    "pairs": 10,
+    "noise_sd": 0.5,
+    "batches": 20,
+    "batch_rows": 50000,
+    "quadratures": [
+      [
+        48,
+        16
+      ],
+      [
+        80,
+        32
+      ]
+    ],
+    "derivative_step": 0.001
+  },
+  "code": {
+    "src/v5/calibrate_influence.py": "88828b723d78c08bdc248f438e6530ae78c19f583a191e4ac732fcded0c3ba57",
+    "src/v5/population.py": "806a88c48b3bf0762130eb8d72361774f7833abbaca6d81cde3eb4604b4121af",
+    "src/v5/tracking.py": "9c56278013ed26d2ba5e24443d964178c4f56ebae120793264f0f0d8e3d8a8a3",
+    "src/v3/population_pair.py": "74f65be6befe07a6a5c805a067c6a0987b484fa11173ece9b6ada51fb5014367",
+    "src/v4/core.py": "152442f8975bdf615a00653998aa4c05b5e739e8a535d6be18aaa9bf7de35089",
+    "src/toroidal.py": "98180bdab88fd2eb422bb265f4dd93537cd5e5ec2709396e517d5b898bfbe342",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "1e0f3f6a90fd13122e3701fd4699b3ea8919ba744112de8a9038c57772c7ac9d",
+  "created_utc": "2026-09-30T15:11:11.353137+00:00"
+}

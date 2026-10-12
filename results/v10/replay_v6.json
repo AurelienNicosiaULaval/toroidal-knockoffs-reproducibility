@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "id": "v6_0_small",
+      "rep": 0,
+      "score_vectors": 4,
+      "maximum_absolute_error": 0.0,
+      "bitwise_scores": true
+    },
+    {
+      "id": "v6_0_large",
+      "rep": 0,
+      "score_vectors": 4,
+      "maximum_absolute_error": 0.0,
+      "bitwise_scores": true
+    },
+    {
+      "id": "v6_0_comparable",
+      "rep": 0,
+      "score_vectors": 4,
+      "maximum_absolute_error": 0.0,
+      "bitwise_scores": true
+    }
+  ],
+  "score_vectors": 12,
+  "scope": "Three individual repetitions, not a second execution of 3000 data sets",
+  "seconds_this_execution": 5.1543548330664635
+}

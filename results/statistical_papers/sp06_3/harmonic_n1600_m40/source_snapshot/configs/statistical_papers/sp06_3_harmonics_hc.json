@@ -1,0 +1,11 @@
+{
+  "version": "sp06_3",
+  "source_version": "sp06_1",
+  "protocol": "docs/statistical_papers/SP06_3_PROTOCOLE_FR_20261010.md",
+  "orders": [1, 2],
+  "covariances": ["hc0", "hc3style"],
+  "repetitions": 1000,
+  "cases": ["harmonic_n400_m400", "harmonic_n1600_m400", "binary_n400_m400", "null_n400_m400", "harmonic_n1600_m40"],
+  "replay_indices": [0, 499, 999],
+  "scope": "Paired reanalysis of the same 5000 SP06.1 datasets; no new independent selection datasets; harmonics and HC3-style choices fixed before this analysis"
+}

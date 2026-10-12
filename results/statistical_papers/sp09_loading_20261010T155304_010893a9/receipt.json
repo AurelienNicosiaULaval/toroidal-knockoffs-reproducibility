@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "source_sha256": "3596fdfc5adc78aed2624b4b17e5f73ce2647a532e85fe9345e63890f629f3ba",
+  "protocol_sha256": "512b6f38c5d6475be507a44bb0965dd6e12db44d42e89f3b086d18b01e03c2c8",
+  "subjects_per_case": 100000,
+  "new_selection_datasets": 0,
+  "response_used": false,
+  "project_sampler_imported": false,
+  "seed": 2026101009,
+  "scope": "known-law quadrature and iid coupling diagnostics, not FDR simulations",
+  "rejection": {
+    "subjects_used": 100000,
+    "proposals": 587018,
+    "accepted_total": 100387,
+    "acceptance": 0.17101179180195497,
+    "log_envelope": 1.9500000000000002,
+    "exact_iid": true,
+    "MCMC": false
+  },
+  "quadrature_rows": 15,
+  "star_rows": 3,
+  "univariate_max_abs_z": 1.4728163106811085,
+  "matrix_identity_max_z": 2.9175888083553243,
+  "covariance_gain_gram_min_eigenvalue": 0.006339272649649423,
+  "bridge_range_defect": 9.533997358974219e-16,
+  "bridge_min_eigenvalue": -1.3877787808418764e-17,
+  "A1_rank": 5,
+  "positive_control": "balanced centre and leaves move in opposite directions",
+  "elapsed_seconds": 1.4570116670802236,
+  "file_sha256": {
+    "executed_source.py": "3596fdfc5adc78aed2624b4b17e5f73ce2647a532e85fe9345e63890f629f3ba",
+    "matrix_diagnostics.npz": "744ba952a00b42f7934741c2ad6556ba3f4d8c435563919efdfd885d8c0bea92",
+    "protocol.md": "512b6f38c5d6475be507a44bb0965dd6e12db44d42e89f3b086d18b01e03c2c8",
+    "star.csv": "e9ec041acedc0e8c303cf501b63b4503fd15bdd5b1b1abec273da62bd7e46574",
+    "star_inputs.npz": "5015dde88854e141b8dd92cd144a42aabe6970a9d24b38c05ce371d7e725b16c",
+    "univariate.csv": "8198eb79a5f6845721022f819fe88d1e9c1e5dc20a64a38701dfd6b41ef9ddc9",
+    "univariate_0.npz": "9b1cd3ff057e90354101dec9e9703e0648677a79c10527095c5be2262f762a37",
+    "univariate_1.npz": "3efb3bb4a3355f1c88e4bd21ed7e3d810e81e4b5dd112a50f9b05e72c79c694b",
+    "univariate_2.npz": "64c8f7f4b324187adeb06eddb9364c2c06ec77e59599e8c5c7bb997afda2ae5e",
+    "univariate_3.npz": "9d3c12417ce6dddc90bd475267cd054a117db435c8c2519e6198d47aa943b9b2",
+    "univariate_4.npz": "e8bd13dece2626c4b198568c1fff7e70ecf3c2ac5c285afe88ef4e4370f72148"
+  }
+}

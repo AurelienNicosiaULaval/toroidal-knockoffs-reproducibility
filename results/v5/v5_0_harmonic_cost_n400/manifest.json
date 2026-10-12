@@ -1,0 +1,44 @@
+{
+  "config": {
+    "id": "v5_0_harmonic_cost_n400",
+    "version": "v5.0-main-harmonic-cost",
+    "seed": 931220,
+    "gamma": 1.0,
+    "kappa": 1.0,
+    "pairs": 10,
+    "noise_sd": 1.0,
+    "n": 400,
+    "m": 400,
+    "chunk": 8192,
+    "amplitude": 8.0,
+    "penalty": 5.0,
+    "q": 0.1,
+    "repetitions": 1000,
+    "responses": [
+      {
+        "name": "first_local",
+        "harmonic": 1,
+        "local": true
+      },
+      {
+        "name": "second_local",
+        "harmonic": 2,
+        "local": true
+      }
+    ]
+  },
+  "code": {
+    "src/v5/run_experiment.py": "1565b936bf9a653d59a06e1f5ca094b33fa939fcabe35d8e547a0cc9c2c49219",
+    "src/v5/harmonic_score.py": "b401e415cb44a547b8ef008283c0e15d9f7a47a4decb9bdf24e10531b065c825",
+    "src/v5/tracking.py": "9c56278013ed26d2ba5e24443d964178c4f56ebae120793264f0f0d8e3d8a8a3",
+    "src/v4/core.py": "152442f8975bdf615a00653998aa4c05b5e739e8a535d6be18aaa9bf7de35089",
+    "src/toroidal.py": "98180bdab88fd2eb422bb265f4dd93537cd5e5ec2709396e517d5b898bfbe342",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "2a22ad29da028c3e6bb5d27f6ae1e882d4c7365bf7dc4eb1b0fa14a724b77966",
+  "created_utc": "2026-09-30T15:17:07.845843+00:00"
+}

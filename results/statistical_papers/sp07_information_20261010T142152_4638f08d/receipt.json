@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "augmented_states_with_noise": 8192,
+  "selection_simulations": 0,
+  "graph": "three-node chain on four-valued angles; finite-state SCIP, not a continuous VM experiment",
+  "max_swap_error": 8.673617379884035e-19,
+  "max_null_contrast": 8.153200337090993e-17,
+  "max_cross_null_covariance": 7.222109402674983e-16,
+  "max_derivative_error": 6.466557270125989e-11,
+  "minimum_budget_eigenvalue": 0.12822968073262056,
+  "minimum_efficient_bound_eigenvalue": 5.122529228072673,
+  "minimum_general_bound_eigenvalue": 39.342950184852945,
+  "kappa": 7.680334578705037,
+  "derivative_norm": 0.10315492607487219,
+  "duplicated_influence_control": -1.0,
+  "elapsed_seconds": 0.18397950008511543,
+  "sha256": {
+    "scripts/statistical_papers/sp07_information_check.py": "7b6365a8d08cbf67a49751fdcc7428d9d49e431dd5b82414d8ce3a503c79b577",
+    "docs/statistical_papers/SP07_INFORMATION_BUDGET_EN_20261010.md": "e17234bd7a31f4eef3190126ffbd8f0cbb2e4372a446a8daf056d703fa06c0a2",
+    "results/statistical_papers/sp07_information_20261010T142152_4638f08d/moments.npz": "183673221fdac0ebb5486a4d4b056fd8a55ac679615e903878e1198f249c534e"
+  }
+}

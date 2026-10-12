@@ -1,0 +1,24 @@
+{
+  "config": {
+    "id": "v5_0_harmonic_variance",
+    "seed": 930830,
+    "batches": 20,
+    "rows": 50000,
+    "gamma": 1.0,
+    "kappa": 1.0
+  },
+  "code": {
+    "src/v5/calibrate_risk.py": "5746e7311c2c8fddf6ffbfc7cb340805a95510b1d92d5a8b2249bbacab39ba05",
+    "src/v5/harmonic_score.py": "b401e415cb44a547b8ef008283c0e15d9f7a47a4decb9bdf24e10531b065c825",
+    "src/v5/tracking.py": "9c56278013ed26d2ba5e24443d964178c4f56ebae120793264f0f0d8e3d8a8a3",
+    "src/v4/core.py": "152442f8975bdf615a00653998aa4c05b5e739e8a535d6be18aaa9bf7de35089",
+    "src/toroidal.py": "98180bdab88fd2eb422bb265f4dd93537cd5e5ec2709396e517d5b898bfbe342",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "1f8a1f3a7a36c99a58d4e97e225adcf72cf04d5ba68a2262696870fb720e857c",
+  "created_utc": "2026-09-30T15:19:00.887100+00:00"
+}

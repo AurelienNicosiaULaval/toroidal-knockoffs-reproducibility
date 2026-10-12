@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "version": "SP14",
+  "Gaussian_KL_implementation": "Cholesky log determinants, diagnostic revision 2",
+  "new_independent_datasets": 0,
+  "reanalysed_archived_datasets": 9,
+  "input_cache": "/Users/aureliennicosia/.cache/edge_sp14_inputs_bb272472",
+  "scope": "Nine matched diagnostics, no Monte Carlo FDR estimate",
+  "started_utc": "2026-10-10T19:38:59.946229+00:00",
+  "configuration": {
+    "g": 0.2,
+    "known_kappa": 0.04,
+    "ridge": 1.0,
+    "level": 0.1,
+    "harmonics": 2,
+    "noise_variance": 1.0
+  },
+  "executed_source.py_sha256": "3e692afadfa502718be7f50a1af334866591357ef7e34a7f0fa4f93e977ba7a9",
+  "protocol.md_sha256": "c2c13a2d8d1af4f0b91e04694168bb4d390182127b088554c732940b55cb6b1a",
+  "input_receipt_sha256": "1f3410cf26eb2786b1f9c18a94bb34f52d531c27604147bd3df198f6374756df",
+  "inputs_sha256": {
+    "K10_n2000_m40.npz": "c52ca7a7863e7f5efa696b4f2c5707b32b823ce6c62ba64de70615306a15d136",
+    "K20_n8000_m40.npz": "99b459f72f802ecd8d9a73af69ea911b612964546e9f9d17aa09a17d0ecb0a2c",
+    "K20_n2000_m40.npz": "10df5f46930e8f821b92c58e9c3c446de9ff25bd804e530b8abf6508f4fb5d97",
+    "K5_n32000_m40.npz": "c98286f0c97639664db523327315ed7ffb4ee2725da3d9433e482f011968ff2d",
+    "K20_n32000_m40.npz": "63c68279bd846fb7a4f529846225b0ee29759e18d85c61b0a8cc20763835505c",
+    "K10_n8000_m40.npz": "5bb760ad6f7aeb46c6c6e9c5d6655f1dc0df52eb1b8c3a839cedc7be8b7f891e",
+    "K5_n8000_m40.npz": "4e0f3271a1162ee4fe64bbcb6cd131bc68e92dc3ded2890d5396a184499dd73d",
+    "K5_n2000_m40.npz": "f874ccd792e91b7d59ef5d26b78916970c3bc6fb16c118a799e38fd5e916e0e1",
+    "K10_n32000_m40.npz": "1da750f84ade8cceffacbb05998afdad360f9a159f84bdd0c50cf7fab2f03ee3"
+  },
+  "population_seconds": 4.145912375068292,
+  "peak_process_bytes_macos": 537362432,
+  "elapsed_seconds": 4.727609042078257,
+  "files_sha256": {
+    "population_checks.csv": "3e6eea0d8a5d8f4489ac646c87e03391453a23cf23df477db012d72c0475647b",
+    "K10_n2000_m40.npz": "1e17d9cbd273bf64053f4ca63492286f9d4b15a2ff7da997afcba3384175a158",
+    "input_receipt.json": "1f3410cf26eb2786b1f9c18a94bb34f52d531c27604147bd3df198f6374756df",
+    "K20_n8000_m40.npz": "870f4e16ee7c36a11ef96e3c4cfaaedf705049f0cd3ededf559733006d439f46",
+    "individual_diagnostics.csv": "d5ccd9ed96ae70e91c18a1d8008f1b42fff9f1007cdc8326e3bd103b1c5da605",
+    "K20_n2000_m40.npz": "b7e10b28c0237994c973a2796717cff14285f904ac9da49c7e362506a12a7c05",
+    "K5_n32000_m40.npz": "96104d0eb54c1bead9cf97ae5df84b37832d9fdc687e1f8f9b1c0d4d012fbcd8",
+    "K20_n32000_m40.npz": "f72b640c03e355415d94e944d069dda130987e973a79eae2fd8b10442c04346f",
+    "population.npz": "564f5d1008bceacd35533b5a60d13675b908707ca7f36b01f5138560296eeef0",
+    "K10_n8000_m40.npz": "6fe8be141fd2de47244d031476592d930e5245b7d28603b8a2ef735dba8859b5",
+    "K5_n8000_m40.npz": "f15a7345b47fd9a354a9f0ba52b5ea9a165fa05a8aa3bbdf50b8db85f61c3f99",
+    "executed_source.py": "3e692afadfa502718be7f50a1af334866591357ef7e34a7f0fa4f93e977ba7a9",
+    "K5_n2000_m40.npz": "9a7ed31f5361d5d7948d03c053d5cc66739ca1d3de0747698951db738c97ec36",
+    "K10_n32000_m40.npz": "d3f5baefdab01418600b0cc409d55d143244d41cf2df506c3f6d22c8863eabe9",
+    "protocol.md": "c2c13a2d8d1af4f0b91e04694168bb4d390182127b088554c732940b55cb6b1a"
+  }
+}

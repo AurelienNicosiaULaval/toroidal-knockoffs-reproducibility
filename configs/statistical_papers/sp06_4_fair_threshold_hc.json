@@ -1,0 +1,26 @@
+{
+  "version": "sp06_4_hc",
+  "source_version": "sp06_4",
+  "protocol": "docs/statistical_papers/SP06_4_PROTOCOLE_FR_20261010.md",
+  "protocol_sha256": "830ee170539b9db6a210c5a4ca8edb9ffa5a580804e64fff43969efa1159e084",
+  "orders": [
+    1,
+    2
+  ],
+  "covariances": [
+    "hc0",
+    "hc3style"
+  ],
+  "repetitions": 1000,
+  "cases": [
+    "harmonic_n1600_m400_p20",
+    "harmonic_n1600_m1600_p20",
+    "binary_n1600_m400_p20"
+  ],
+  "replay_indices": [
+    0,
+    499,
+    999
+  ],
+  "scope": "Paired reanalysis of the same 3000 SP06.4 datasets; no independent datasets added; H2/HC3-style chosen before execution"
+}

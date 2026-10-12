@@ -1,0 +1,8 @@
+{
+  "batch": 1,
+  "rows": 50000,
+  "residual_mean": -0.0005200377838009222,
+  "residual_variance": 0.47870312324607656,
+  "influence_squared": 9.31653902800382,
+  "influence_residual_squared": 4.925978815808893
+}

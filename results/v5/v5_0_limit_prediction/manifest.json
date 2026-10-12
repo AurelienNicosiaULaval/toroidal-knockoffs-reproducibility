@@ -1,0 +1,29 @@
+{
+  "config": {
+    "id": "v5_0_limit_prediction",
+    "seed": 930831,
+    "draws": 1000000,
+    "chunk": 20000,
+    "n_over_m": [
+      0.0,
+      1.0,
+      2285.714285714286,
+      16000.0
+    ],
+    "derivative_step": 0.0005
+  },
+  "code": {
+    "src/v5/predict.py": "62dce674d7982941f27abe41a8b87668fed8994e96324d6d6b07d18688ad18cc",
+    "src/v5/population.py": "806a88c48b3bf0762130eb8d72361774f7833abbaca6d81cde3eb4604b4121af",
+    "src/v5/tracking.py": "9c56278013ed26d2ba5e24443d964178c4f56ebae120793264f0f0d8e3d8a8a3",
+    "src/v3/population_pair.py": "74f65be6befe07a6a5c805a067c6a0987b484fa11173ece9b6ada51fb5014367",
+    "src/provenance.py": "e00a825da701f1c61dd8c4e0a4b67fd64e101221c99266fd1476e84256394d1e",
+    "results/v5/v5_0_influence/summary.json": "3d184d56048e3b17c480c4bb53f82f10dde4f2a38c69a60502075dc81dbcf3a2"
+  },
+  "python": "3.13.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+  "signature": "227cfd9ca26361256c48080669c2aba738fde90dee7b568f76604cf0f72627df",
+  "created_utc": "2026-09-30T15:18:59.998944+00:00"
+}

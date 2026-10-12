@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "completed": [
+    {
+      "case": "harmonic_n1600_m400_p20",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 87.89125195913948,
+      "summary_sha256": "5bb34909f0b05e7c62582cb0ff7af17a1c0fc44232ce3ca0b73e95ca3f25d722",
+      "failed_repetitions": []
+    },
+    {
+      "case": "harmonic_n1600_m1600_p20",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 90.48541187494993,
+      "summary_sha256": "c32c242bd8cce5e75b905d9384ffcaec5b25a3f096147f38a1b2e7f25f956afa",
+      "failed_repetitions": []
+    },
+    {
+      "case": "binary_n1600_m400_p20",
+      "new_analyses": 1000,
+      "reanalysed_datasets": 1000,
+      "new_independent_datasets": 0,
+      "replayed_indices": [
+        0,
+        499,
+        999
+      ],
+      "elapsed_seconds_including_aggregation_and_replay": 90.25136124994606,
+      "summary_sha256": "a133e039c8208dcb9efd438686c5e05d993b40676d54801f0cbe7888bd3d1c21",
+      "failed_repetitions": []
+    }
+  ],
+  "elapsed_seconds": 268.671935667051,
+  "scope": "Paired reanalysis of the same 3000 SP06.4 datasets; no independent datasets added; H2/HC3-style chosen before execution"
+}

@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "scientific_version": "SP14",
+  "parent_compact_zip_sha256": "c1b7fa285d3be13b750cc05d5447a9eec9d0885175f5ca8cfd27ac8da27bfb25",
+  "preserved_parent_files": 734,
+  "excluded_from_public_code_results_package": [
+    "README.md",
+    "docs/statistical_papers/SP08_CHANGEMENTS_SCIENTIFIQUES_20261010.md",
+    "docs/statistical_papers/SP09_CHANGEMENTS_SCIENTIFIQUES_20261010.md",
+    "docs/statistical_papers/SP11_CHANGEMENTS_SCIENTIFIQUES_20261010.md",
+    "docs/statistical_papers/SP12_POINT_DE_REPRISE_FR_20261010.md",
+    "docs/statistical_papers/SP14_REPRISE_GAUSSIENNE_FR_20261010.md",
+    "manuscript/obstacles_supplement_spl01.tex",
+    "manuscript/obstacles_v3.tex",
+    "provenance/package_builder.py",
+    "provenance/sp14b_pdf_receipt.json",
+    "run_minimal.py",
+    "run_sp14b.py"
+  ],
+  "scope_change": "Public runner omits manuscript validation and PDF compilation; numerical checks and seed replay retained.",
+  "new_independent_datasets": 0
+}

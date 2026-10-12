@@ -1,0 +1,102 @@
+{
+  "config": {
+    "id": "v5_0_normal_integral",
+    "scales": [
+      0.0,
+      0.005194808329046885,
+      0.24835934139541735,
+      0.6570970531120637
+    ],
+    "nodes": [
+      64,
+      128,
+      256
+    ]
+  },
+  "records": [
+    {
+      "scale": 0.0,
+      "nodes": 64,
+      "fdr": 0.07847765017033842,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.0,
+      "nodes": 128,
+      "fdr": 0.07847765017033695,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.0,
+      "nodes": 256,
+      "fdr": 0.07847765017033759,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.005194808329046885,
+      "nodes": 64,
+      "fdr": 0.07848287732869758,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.005194808329046885,
+      "nodes": 128,
+      "fdr": 0.07848287732869613,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.005194808329046885,
+      "nodes": 256,
+      "fdr": 0.07848287732869677,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.24835934139541735,
+      "nodes": 64,
+      "fdr": 0.08922001266012888,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.24835934139541735,
+      "nodes": 128,
+      "fdr": 0.08922001266012766,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.24835934139541735,
+      "nodes": 256,
+      "fdr": 0.0892200126601281,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.6570970531120637,
+      "nodes": 64,
+      "fdr": 0.12689315352872085,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.6570970531120637,
+      "nodes": 128,
+      "fdr": 0.12689315352843017,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    },
+    {
+      "scale": 0.6570970531120637,
+      "nodes": 256,
+      "fdr": 0.12689315352842906,
+      "truncation_error_upper": 7.619853033042884e-24,
+      "scope": "Analytic tail bound only; quadrature discretization error is not interval-certified"
+    }
+  ]
+}

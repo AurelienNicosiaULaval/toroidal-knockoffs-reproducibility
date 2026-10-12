@@ -1,0 +1,501 @@
+{
+  "config": {
+    "version": "sp06_1",
+    "seed": 10610100,
+    "p": 12,
+    "repetitions": 1000,
+    "field_phase": 0.7,
+    "root_field_norm": 3.0,
+    "leaf_field_norm": 0.2,
+    "singular_values": [
+      0.8,
+      0.5
+    ],
+    "left_rotation_step": 0.17,
+    "right_rotation_step": -0.11,
+    "active": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "continuous_scale": 3.0,
+    "binary_scale": 1.5,
+    "binary_intercept": -0.25,
+    "noise_sd": 1.0,
+    "ridge_penalty": 1.0,
+    "pilot_penalty_numerator": 1.0,
+    "pilot_optimizer_maxiter": 2000,
+    "pilot_gradient_tolerance": 3e-06,
+    "level": 0.1,
+    "marginal_level": 0.05,
+    "gate_mcse_multiplier": 3.0,
+    "method_order": [
+      "wald_pilot_by",
+      "wald_naive_by",
+      "wald_oracle_by",
+      "knockoff_plus_pilot",
+      "knockoff_plus_oracle"
+    ],
+    "cases": [
+      {
+        "id": "harmonic_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "harmonic",
+        "central": true
+      },
+      {
+        "id": "harmonic_n1600_m400",
+        "n": 1600,
+        "m": 400,
+        "response": "harmonic",
+        "central": true
+      },
+      {
+        "id": "binary_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "binary",
+        "central": true
+      },
+      {
+        "id": "null_n400_m400",
+        "n": 400,
+        "m": 400,
+        "response": "null",
+        "central": true
+      },
+      {
+        "id": "harmonic_n1600_m40",
+        "n": 1600,
+        "m": 40,
+        "response": "harmonic",
+        "central": false
+      }
+    ],
+    "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee",
+    "id": "harmonic_n400_m400",
+    "n": 400,
+    "m": 400,
+    "response": "harmonic",
+    "central": true
+  },
+  "summary": [
+    {
+      "configuration": "harmonic_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_pilot_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.01575,
+      "fdp_mcse": 0.003623965532636492,
+      "fdp_failure_lower": 0.01575,
+      "fdp_failure_upper": 0.01575,
+      "power": 0.03766666666666667,
+      "power_mcse": 0.0027345180013689653,
+      "power_failure_lower": 0.03766666666666667,
+      "power_failure_upper": 0.03766666666666667,
+      "empty": 0.805,
+      "empty_mcse": 0.012535235623319258,
+      "empty_failure_lower": 0.805,
+      "empty_failure_upper": 0.805,
+      "marginal_null_rejection": 0.05233333333333333,
+      "marginal_null_rejection_mcse": 0.0028756723933605786,
+      "marginal_null_rejection_failure_lower": 0.05233333333333333,
+      "marginal_null_rejection_failure_upper": 0.05233333333333333,
+      "failures": 0,
+      "failure_rate": 0.0,
+      "fdr_diagnostic": true,
+      "marginal_diagnostic": true,
+      "calibration_diagnostic_complete": true
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_naive_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.03718333333333333,
+      "fdp_mcse": 0.005207239998690239,
+      "fdp_failure_lower": 0.03718333333333333,
+      "fdp_failure_upper": 0.03718333333333333,
+      "power": 0.078,
+      "power_mcse": 0.004094642772302134,
+      "power_failure_lower": 0.078,
+      "power_failure_upper": 0.078,
+      "empty": 0.651,
+      "empty_mcse": 0.015080663991563052,
+      "empty_failure_lower": 0.651,
+      "empty_failure_upper": 0.651,
+      "marginal_null_rejection": 0.0765,
+      "marginal_null_rejection_mcse": 0.0034023510488081607,
+      "marginal_null_rejection_failure_lower": 0.0765,
+      "marginal_null_rejection_failure_upper": 0.0765,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "wald_oracle_by",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.03626666666666666,
+      "fdp_mcse": 0.005274023320829679,
+      "fdp_failure_lower": 0.03626666666666666,
+      "fdp_failure_upper": 0.03626666666666666,
+      "power": 0.07266666666666666,
+      "power_mcse": 0.003888903188876897,
+      "power_failure_lower": 0.07266666666666666,
+      "power_failure_upper": 0.07266666666666666,
+      "empty": 0.657,
+      "empty_mcse": 0.015019206922357005,
+      "empty_failure_lower": 0.657,
+      "empty_failure_upper": 0.657,
+      "marginal_null_rejection": 0.07166666666666666,
+      "marginal_null_rejection_mcse": 0.003438045009423256,
+      "marginal_null_rejection_failure_lower": 0.07166666666666666,
+      "marginal_null_rejection_failure_upper": 0.07166666666666666,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "knockoff_plus_pilot",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.011663636363636364,
+      "fdp_mcse": 0.00236294520439315,
+      "fdp_failure_lower": 0.011663636363636364,
+      "fdp_failure_upper": 0.011663636363636364,
+      "power": 0.022,
+      "power_mcse": 0.004463721956236912,
+      "power_failure_lower": 0.022,
+      "power_failure_upper": 0.022,
+      "empty": 0.976,
+      "empty_mcse": 0.004842256441727085,
+      "empty_failure_lower": 0.976,
+      "empty_failure_upper": 0.976,
+      "failures": 0,
+      "failure_rate": 0.0
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "n": 400,
+      "m": 400,
+      "method": "knockoff_plus_oracle",
+      "repetitions": 1000,
+      "central": true,
+      "fdp": 0.009563636363636363,
+      "fdp_mcse": 0.0020776959888961543,
+      "fdp_failure_lower": 0.009563636363636363,
+      "fdp_failure_upper": 0.009563636363636363,
+      "power": 0.02033333333333333,
+      "power_mcse": 0.00440269429445013,
+      "power_failure_lower": 0.02033333333333333,
+      "power_failure_upper": 0.02033333333333333,
+      "empty": 0.979,
+      "empty_mcse": 0.004536472151306517,
+      "empty_failure_lower": 0.979,
+      "empty_failure_upper": 0.979,
+      "failures": 0,
+      "failure_rate": 0.0
+    }
+  ],
+  "paired": [
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.021433333333333332,
+      "mcse": 0.0039112116364822605
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.040333333333333325,
+      "mcse": 0.003008145246944636
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_naive_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.154,
+      "mcse": 0.011419913065098805
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": -0.020516666666666666,
+      "mcse": 0.00638414627907299
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": -0.035,
+      "mcse": 0.004442880105075143
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": 0.148,
+      "mcse": 0.018342094548672257
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.004086363636363636,
+      "mcse": 0.004181244663598698
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.015666666666666662,
+      "mcse": 0.005115624503274546
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.171,
+      "mcse": 0.013264046702832996
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0061863636363636365,
+      "mcse": 0.004213253244889104
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.017333333333333333,
+      "mcse": 0.005201917803822609
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_pilot_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.174,
+      "mcse": 0.013487249753226413
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0009166666666666657,
+      "mcse": 0.0072818813935660405
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "power",
+      "difference_left_minus_right": 0.005333333333333334,
+      "mcse": 0.0050769191880288105
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "wald_oracle_by",
+      "metric": "empty",
+      "difference_left_minus_right": -0.006,
+      "mcse": 0.01980798718588934
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.025519696969696967,
+      "mcse": 0.005609368088511339
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.056,
+      "mcse": 0.0059169351215256245
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.325,
+      "mcse": 0.015608286857263313
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.02761969696969697,
+      "mcse": 0.005598508364796368
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.057666666666666665,
+      "mcse": 0.005839310060823186
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_naive_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.328,
+      "mcse": 0.015577504891947834
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0246030303030303,
+      "mcse": 0.0057618729814735425
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "power",
+      "difference_left_minus_right": 0.050666666666666665,
+      "mcse": 0.005785011257044625
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_pilot",
+      "metric": "empty",
+      "difference_left_minus_right": -0.319,
+      "mcse": 0.015667944488173442
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.026703030303030305,
+      "mcse": 0.005706100753729032
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.05233333333333333,
+      "mcse": 0.005875198924874911
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "wald_oracle_by",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.322,
+      "mcse": 0.015638432164400643
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "fdp",
+      "difference_left_minus_right": 0.0020999999999999994,
+      "mcse": 0.0031021197641820423
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "power",
+      "difference_left_minus_right": 0.0016666666666666674,
+      "mcse": 0.00620771761440567
+    },
+    {
+      "configuration": "harmonic_n400_m400",
+      "left": "knockoff_plus_pilot",
+      "right": "knockoff_plus_oracle",
+      "metric": "empty",
+      "difference_left_minus_right": -0.003,
+      "mcse": 0.006560033081778934
+    }
+  ],
+  "timing": {
+    "estimated_statistics": {
+      "total_seconds": 1.7328296673949808,
+      "mean_seconds_per_attempt": 0.0017328296673949808,
+      "median_seconds_per_attempt": 0.0016950630815699697
+    },
+    "estimated_witness": {
+      "total_seconds": 0.8923126817680895,
+      "mean_seconds_per_attempt": 0.0008923126817680895,
+      "median_seconds_per_attempt": 0.0008714374853298068
+    },
+    "oracle_statistics": {
+      "total_seconds": 1.6975364417303354,
+      "mean_seconds_per_attempt": 0.0016975364417303354,
+      "median_seconds_per_attempt": 0.0016596880741417408
+    },
+    "oracle_witness": {
+      "total_seconds": 0.8821609353180975,
+      "mean_seconds_per_attempt": 0.0008821609353180975,
+      "median_seconds_per_attempt": 0.0008599584689363837
+    },
+    "original_sampling": {
+      "total_seconds": 1.6056707503739744,
+      "mean_seconds_per_attempt": 0.0016056707503739743,
+      "median_seconds_per_attempt": 0.0015662296209484339
+    },
+    "pilot_estimation": {
+      "total_seconds": 24.580773327266797,
+      "mean_seconds_per_attempt": 0.024580773327266797,
+      "median_seconds_per_attempt": 0.024318041978403926
+    },
+    "pilot_sampling": {
+      "total_seconds": 1.5880647401791066,
+      "mean_seconds_per_attempt": 0.0015880647401791065,
+      "median_seconds_per_attempt": 0.0015571664553135633
+    },
+    "pilot_sandwich": {
+      "total_seconds": 2.328597926767543,
+      "mean_seconds_per_attempt": 0.002328597926767543,
+      "median_seconds_per_attempt": 0.0022969794226810336
+    }
+  },
+  "failed_repetitions": [],
+  "max_rss_bytes_macos": 102285312,
+  "individual_recomputed_selections": 5000,
+  "scope": "Exact iid connected-star selection study, independent learned general fields and compatible edge matrices; fixed graph; no misspecification or high-dimensional guarantee"
+}

@@ -1,0 +1,48 @@
+{
+  "config": {
+    "id": "v5_0_influence",
+    "version": "v5.0-influence-calibration",
+    "seed": 930801,
+    "gamma": 1.0,
+    "kappa": 1.0,
+    "pairs": 10,
+    "noise_sd": 0.5,
+    "batches": 20,
+    "batch_rows": 50000,
+    "quadratures": [
+      [
+        48,
+        16
+      ],
+      [
+        80,
+        32
+      ]
+    ],
+    "derivative_step": 0.001
+  },
+  "quadrature_slopes": [
+    {
+      "grid": 48,
+      "hermite": 16,
+      "slope": -0.06711115569405651
+    },
+    {
+      "grid": 80,
+      "hermite": 32,
+      "slope": -0.06711118578502442
+    }
+  ],
+  "slope": -0.06711118578502442,
+  "pilot_variance": 0.28221001744674545,
+  "tau_squared": 47.10024802244734,
+  "tau_squared_mcse": 0.08161718534569926,
+  "information": 0.354346032450356,
+  "ratio_constant": 2.698603357553489e-05,
+  "ratio_constant_mcse": 4.67624735867633e-08,
+  "exact_influence_second_moment": 9.244493441631214,
+  "empirical_influence_second_moment": 9.26456413130797,
+  "mean_pair_residual_variance": 0.47849716797673886,
+  "scope": "Monte Carlo variance error only; quadrature and derivative errors are convergence checks, not certified bounds.",
+  "seconds": 6.190221666125581
+}

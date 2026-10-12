@@ -1,0 +1,16 @@
+{
+  "version": "v6.0-pilot-sharing",
+  "gamma": 1.0,
+  "kappa": 1.0,
+  "pairs": 10,
+  "noise_sd": 0.5,
+  "chunk": 8192,
+  "amplitude": 1.0,
+  "penalty": 5.0,
+  "q": 0.1,
+  "repetitions": 1000,
+  "id": "v6_0_comparable",
+  "n": 80000,
+  "m": 80000,
+  "seed": 106130
+}
